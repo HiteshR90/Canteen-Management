@@ -1,0 +1,176 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="sitemaster.master.cs" Inherits="sitemaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Gardi Canteen</title>
+    <meta name="keywords" content="redox, red, dark brown, free css templates, web design, CSS, HTML" />
+    <meta name="description" content="Redox - free CSS templates + free website templates" />
+    <link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.ennui.contentslider.css" rel="stylesheet" type="text/css" media="screen,projection" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+       
+        
+        
+        <div id="templatemo_header_wrapper">
+	<div id="templatemo_header">
+    
+    	<div id="site_title">
+            <h1><a href="Home.aspx">
+                <strong>Gardi</strong> Canteen
+                <span></span>
+            </a></h1>
+        </div>
+        
+        <div id="templatemo_menu">
+    
+            <ul>
+                <li><a href="Home.aspx"class="current">Home</a></li>
+                <li><a href="Menucardf.aspx">Menu Card</a></li>
+                <li> 
+                    <a href="SignIN.aspx">
+                        <asp:Label ID="lblsignin" runat="server" Text="Log In"></asp:Label></a></li>
+                <li><a href="Register.aspx">Register</a></li>
+                <li><a href="MenucardF1.aspx">View My Items</a></li>
+                <li><a href="Contactus.aspx">Contact Us</a></li>
+                
+            </ul>    	
+            
+    
+    	</div> <!-- end of templatemo_menu -->
+        
+        <div class="cleaner">
+                    </div>
+	</div> <!-- end of header -->
+    
+</div> <!-- end of header_wrapper -->
+
+        <div id="templatemo_slider">
+            
+    <div id="one" class="contentslider">
+			<div class="cs_wrapper">
+                        <div class="cs_slider">
+                        
+                            <div class="cs_article">
+                            
+                            <div class="article_content">
+                            	
+                                <div class="left">
+                                    <h1>HEALTHY TIPS</h1>
+                                    <p><h2>"Take the stairs instead of the elevator.<br> Try it,<br> Every little bit of exercise helps."</h2></p>
+                                    
+                                    <div class="button"><a href="#">Read more</a></div>
+                               	</div>
+                                <div class="right">
+                               		<img src="images/slider/templatemo_slide01.jpg" alt="Work 01" />
+								</div>
+                                
+                                </div>
+                                   
+                                                                
+                            </div><!-- End cs_article -->
+                            
+                            <div class="cs_article">
+                            
+                            <div class="article_content">
+                            
+                                <div class="left">
+                                    <h1>HEALTHY TIPS</h1>
+                                    <p><h2>"Take the time to savor every bite of your meal.<br> You'll be more satisfied and less tempted to overeat."</h2></p>
+                                    
+                                    <div class="button"><a href="#">Read more</a></div>
+                               	</div>
+                                <div class="right">
+                                	<img src="images/slider/templatemo_slide02.jpg" alt="Work 02" />
+                                </div>
+                                
+                                </div>
+                          </div><!-- End cs_article -->
+                            
+                            <div class="cs_article">
+                            
+                            <div class="article_content">
+                            
+                                <div class="left">
+                                    <h1>HEALTHY TIPS </h1>
+                                    <p><h2>"Breakfast really is the most important way to start your day.<br> It can decrease your risk of weight gain by as much as 50 percent!"</h2></p>
+                                    
+                                    <div class="button"><a href="#">Read more</a></div>
+                               	</div>
+                                <div class="right">
+                                	<img src="images/slider/templatemo_slide03.jpg" alt="Work 03" />
+                                </div>
+                                </div>
+                          </div><!-- End cs_article -->
+                            
+                            <div class="cs_article">
+                            <div class="article_content">
+                                <div class="left">
+                                    <h1>HEALTHY TIPS </h1>
+                                    <p><h2>"Slow down, it takes our brain 20 minutes to catch up to our belly and register that we're full.<br> So the faster we eat, the easier it is to overeat."</h2></p>
+                                    
+                                    <div class="button"><a href="#">Read more</a></div>
+                               	</div>
+                                <div class="right">
+                                	<img src="images/slider/templatemo_slide04.jpg" alt="Work 04"/>
+                                </div>
+                                </div>
+                          </div><!-- End cs_article -->
+                      
+      </div><!-- End cs_slider -->
+      </div><!-- End cs_wrapper -->
+                </div><!-- End contentslider -->
+    
+    <!-- Site JavaScript -->
+    <script type="text/javascript" src="js/jquery-1.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.ennui.contentslider.js"></script>
+    <script type="text/javascript">
+        $(function() {
+        $('#one').ContentSlider({
+        width : '986px',
+        height : '240px',
+        speed : 600,
+        easing : 'easeInOutQuart'
+        });
+        });
+    </script>
+    <script src="js/jquery.chili-2.2.js" type="text/javascript"></script>
+    <script src="js/chili/recipes.js" type="text/javascript"></script>
+    <div class="cleaner"></div>
+</div>
+            <!-- end of templatemo_slider -->
+        
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           
+        </asp:ContentPlaceHolder>
+    
+        <div id="templatemo_footer_wrapper">
+
+    <div id="templatemo_footer">
+
+        <ul class="footer_menu">
+            <li><a href="Home.aspx">Home</a></li>
+            <li><a href="Menucardf.aspx">Menu Card</a></li>
+            <li><a href="Register.aspx">Register</a></li>
+            <li><a href="MenucardF1.aspx">View My Items</a></li>
+            <li class="last_menu"><a href="Contactus.aspx">Contact Us</a></li>
+            <a href="changepassword.aspx"><asp:Label ID="lblchangepassword" runat="server" Text="Change Password" ForeColor="#965B00"></asp:Label></a>
+        </ul>
+    
+                    Copyright © 2011 <a href="#">HR. Corp.</a>&nbsp;
+    
+    </div> <!-- end of footer -->  
+</div> <!-- end of footer_wrapper -->
+    </div>
+    </form>
+</body>
+</html>

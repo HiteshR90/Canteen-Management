@@ -1,0 +1,2219 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AspXtremeCaptcha</name>
+    </assembly>
+    <members>
+        <member name="T:Cforge.Collections.Unknow.SfbOrderedDictionary`2">
+            <summary>Represents a collection of keys and values.</summary>
+            <filterpriority>1</filterpriority>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbOrderedDictionary`2.#ctor">
+            <summary>Initializes a new instance of the <see cref="T:SfbOrderedDictionary`2"></see> class that is empty, has the default initial capacity, and uses the default equality comparer for the key type.</summary>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbOrderedDictionary`2.#ctor(System.Collections.Generic.IDictionary{`0,`1})">
+            <summary>Initializes a new instance of the <see cref="T:SfbOrderedDictionary`2"></see> class that contains elements copied from the specified <see cref="T:System.Collections.Generic.IDictionary`2"></see> and uses the default equality comparer for the key type.</summary>
+            <param name="dictionary">The <see cref="T:System.Collections.Generic.IDictionary`2"></see> whose elements are copied to the new <see cref="T:SfbOrderedDictionary`2"></see>.</param>
+            <exception cref="T:System.ArgumentException">dictionary contains one or more duplicate keys.</exception>
+            <exception cref="T:System.ArgumentNullException">dictionary is null.</exception>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbOrderedDictionary`2.#ctor(System.Collections.Generic.IEqualityComparer{`0})">
+            <summary>Initializes a new instance of the <see cref="T:SfbOrderedDictionary`2"></see> class that is empty, has the default initial capacity, and uses the specified <see cref="T:System.Collections.Generic.IEqualityComparer`1"></see>.</summary>
+            <param name="comparer">The <see cref="T:System.Collections.Generic.IEqualityComparer`1"></see> implementation to use when comparing keys, or null to use the default <see cref="T:System.Collections.Generic.EqualityComparer`1"></see> for the type of the key.</param>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbOrderedDictionary`2.#ctor(System.Int32)">
+            <summary>Initializes a new instance of the <see cref="T:SfbOrderedDictionary`2"></see> class that is empty, has the specified initial capacity, and uses the default equality comparer for the key type.</summary>
+            <param name="capacity">The initial number of elements that the <see cref="T:SfbOrderedDictionary`2"></see> can contain.</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">capacity is less than 0.</exception>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbOrderedDictionary`2.#ctor(System.Collections.Generic.IDictionary{`0,`1},System.Collections.Generic.IEqualityComparer{`0})">
+            <summary>Initializes a new instance of the <see cref="T:SfbOrderedDictionary`2"></see> class that contains elements copied from the specified <see cref="T:System.Collections.Generic.IDictionary`2"></see> and uses the specified <see cref="T:System.Collections.Generic.IEqualityComparer`1"></see>.</summary>
+            <param name="dictionary">The <see cref="T:System.Collections.Generic.IDictionary`2"></see> whose elements are copied to the new <see cref="T:SfbOrderedDictionary`2"></see>.</param>
+            <param name="comparer">The <see cref="T:System.Collections.Generic.IEqualityComparer`1"></see> implementation to use when comparing keys, or null to use the default <see cref="T:System.Collections.Generic.EqualityComparer`1"></see> for the type of the key.</param>
+            <exception cref="T:System.ArgumentException">dictionary contains one or more duplicate keys.</exception>
+            <exception cref="T:System.ArgumentNullException">dictionary is null.</exception>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbOrderedDictionary`2.#ctor(System.Int32,System.Collections.Generic.IEqualityComparer{`0})">
+            <summary>Initializes a new instance of the <see cref="T:SfbOrderedDictionary`2"></see> class that is empty, has the specified initial capacity, and uses the specified <see cref="T:System.Collections.Generic.IEqualityComparer`1"></see>.</summary>
+            <param name="capacity">The initial number of elements that the <see cref="T:SfbOrderedDictionary`2"></see> can contain.</param>
+            <param name="comparer">The <see cref="T:System.Collections.Generic.IEqualityComparer`1"></see> implementation to use when comparing keys, or null to use the default <see cref="T:System.Collections.Generic.EqualityComparer`1"></see> for the type of the key.</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">capacity is less than 0.</exception>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbOrderedDictionary`2.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Initializes a new instance of the <see cref="T:SfbOrderedDictionary`2"></see> class with serialized data.</summary>
+            <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext"></see> structure containing the source and destination of the serialized stream associated with the <see cref="T:SfbOrderedDictionary`2"></see>.</param>
+            <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo"></see> object containing the information required to serialize the <see cref="T:SfbOrderedDictionary`2"></see>.</param>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbOrderedDictionary`2.Add(`0,`1)">
+            <summary>Adds the specified key and value to the dictionary.</summary>
+            <param name="value">The value of the element to add. The value can be null for reference types.</param>
+            <param name="key">The key of the element to add.</param>
+            <exception cref="T:System.ArgumentException">An element with the same key already exists in the <see cref="T:SfbOrderedDictionary`2"></see>.</exception>
+            <exception cref="T:System.ArgumentNullException">key is null.</exception>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbOrderedDictionary`2.Clear">
+            <summary>Removes all keys and values from the <see cref="T:SfbOrderedDictionary`2"></see>.</summary>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbOrderedDictionary`2.ContainsKey(`0)">
+            <summary>Determines whether the <see cref="T:SfbOrderedDictionary`2"></see> contains the specified key.</summary>
+            <returns>true if the <see cref="T:SfbOrderedDictionary`2"></see> contains an element with the specified key; otherwise, false.</returns>
+            <param name="key">The key to locate in the <see cref="T:SfbOrderedDictionary`2"></see>.</param>
+            <exception cref="T:System.ArgumentNullException">key is null.</exception>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbOrderedDictionary`2.ContainsValue(`1)">
+            <summary>Determines whether the <see cref="T:SfbOrderedDictionary`2"></see> contains a specific value.</summary>
+            <returns>true if the <see cref="T:SfbOrderedDictionary`2"></see> contains an element with the specified value; otherwise, false.</returns>
+            <param name="value">The value to locate in the <see cref="T:SfbOrderedDictionary`2"></see>. The value can be null for reference types.</param>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbOrderedDictionary`2.GetEnumerator">
+            <summary>Returns an enumerator that iterates through the <see cref="T:SfbOrderedDictionary`2"></see>.</summary>
+            <returns>A <see cref="T:SfbOrderedDictionary`2.Enumerator"></see> structure for the <see cref="T:SfbOrderedDictionary`2"></see>.</returns>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbOrderedDictionary`2.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Implements the <see cref="T:System.Runtime.Serialization.ISerializable"></see> interface and returns the data needed to serialize the <see cref="T:SfbOrderedDictionary`2"></see> instance.</summary>
+            <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext"></see> structure that contains the source and destination of the serialized stream associated with the <see cref="T:SfbOrderedDictionary`2"></see> instance.</param>
+            <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo"></see> object that contains the information required to serialize the <see cref="T:SfbOrderedDictionary`2"></see> instance.</param>
+            <exception cref="T:System.ArgumentNullException">info is null.</exception>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbOrderedDictionary`2.OnDeserialization(System.Object)">
+            <summary>Implements the <see cref="T:System.Runtime.Serialization.ISerializable"></see> interface and raises the deserialization event when the deserialization is complete.</summary>
+            <param name="sender">The source of the deserialization event.</param>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The <see cref="T:System.Runtime.Serialization.SerializationInfo"></see> object associated with the current <see cref="T:SfbOrderedDictionary`2"></see> instance is invalid.</exception>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbOrderedDictionary`2.Remove(`0)">
+            <summary>Removes the value with the specified key from the <see cref="T:SfbOrderedDictionary`2"></see>.</summary>
+            <returns>true if the element is successfully found and removed; otherwise, false.  This method returns false if key is not found in the <see cref="T:SfbOrderedDictionary`2"></see>.</returns>
+            <param name="key">The key of the element to remove.</param>
+            <exception cref="T:System.ArgumentNullException">key is null.</exception>
+        </member>
+        <member name="P:Cforge.Collections.Unknow.SfbOrderedDictionary`2.Comparer">
+            <summary>Gets the <see cref="T:System.Collections.Generic.IEqualityComparer`1"></see> that is used to determine equality of keys for the dictionary. </summary>
+            <returns>The <see cref="T:System.Collections.Generic.IEqualityComparer`1"></see> generic interface implementation that is used to determine equality of keys for the current <see cref="T:SfbOrderedDictionary`2"></see> and to provide hash values for the keys.</returns>
+        </member>
+        <member name="P:Cforge.Collections.Unknow.SfbOrderedDictionary`2.Count">
+            <summary>Gets the number of key/value pairs contained in the <see cref="T:SfbOrderedDictionary`2"></see>.</summary>
+            <returns>The number of key/value pairs contained in the <see cref="T:SfbOrderedDictionary`2"></see>.</returns>
+        </member>
+        <member name="P:Cforge.Collections.Unknow.SfbOrderedDictionary`2.Item(`0)">
+            <summary>Gets or sets the value associated with the specified key.</summary>
+            <returns>The value associated with the specified key. If the specified key is not found, a get operation throws a <see cref="T:System.Collections.Generic.KeyNotFoundException"></see>, and a set operation creates a new element with the specified key.</returns>
+            <param name="key">The key of the value to get or set.</param>
+            <exception cref="T:System.ArgumentNullException">key is null.</exception>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">The property is retrieved and key does not exist in the collection.</exception>
+        </member>
+        <member name="P:Cforge.Collections.Unknow.SfbOrderedDictionary`2.Keys">
+            <summary>Gets a collection containing the keys in the <see cref="T:SfbOrderedDictionary`2"></see>.</summary>
+            <returns>A <see cref="T:SfbOrderedDictionary`2.KeyCollection"></see> containing the keys in the <see cref="T:SfbOrderedDictionary`2"></see>.</returns>
+        </member>
+        <member name="P:Cforge.Collections.Unknow.SfbOrderedDictionary`2.Values">
+            <summary>Gets a collection containing the values in the <see cref="T:SfbOrderedDictionary`2"></see>.</summary>
+            <returns>A <see cref="T:SfbOrderedDictionary`2.ValueCollection"></see> containing the values in the <see cref="T:SfbOrderedDictionary`2"></see>.</returns>
+        </member>
+        <member name="T:Cforge.Collections.Unknow.SfbOrderedDictionary`2.Enumerator">
+            <summary>Enumerates the elements of a <see cref="T:SfbOrderedDictionary`2"></see>.</summary>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbOrderedDictionary`2.Enumerator.MoveNext">
+            <summary>Advances the enumerator to the next element of the <see cref="T:SfbOrderedDictionary`2"></see>.</summary>
+            <returns>true if the enumerator was successfully advanced to the next element; false if the enumerator has passed the end of the collection.</returns>
+            <exception cref="T:System.InvalidOperationException">The collection was modified after the enumerator was created. </exception>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbOrderedDictionary`2.Enumerator.Dispose">
+            <summary>Releases all resources used by the <see cref="T:SfbOrderedDictionary`2.Enumerator"></see>.</summary>
+        </member>
+        <member name="P:Cforge.Collections.Unknow.SfbOrderedDictionary`2.Enumerator.Current">
+            <summary>Gets the element at the current position of the enumerator.</summary>
+            <returns>The element in the <see cref="T:SfbOrderedDictionary`2"></see> at the current position of the enumerator.</returns>
+        </member>
+        <member name="T:Cforge.Collections.Unknow.SfbOrderedDictionary`2.KeyCollection">
+            <summary>Represents the collection of keys in a <see cref="T:SfbOrderedDictionary`2"></see>. This class cannot be inherited.</summary>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbOrderedDictionary`2.KeyCollection.#ctor(Cforge.Collections.Unknow.SfbOrderedDictionary{`0,`1})">
+            <summary>Initializes a new instance of the <see cref="T:SfbOrderedDictionary`2.KeyCollection"></see> class that reflects the keys in the specified <see cref="T:SfbOrderedDictionary`2"></see>.</summary>
+            <param name="dictionary">The <see cref="T:SfbOrderedDictionary`2"></see> whose keys are reflected in the new <see cref="T:SfbOrderedDictionary`2.KeyCollection"></see>.</param>
+            <exception cref="T:System.ArgumentNullException">dictionary is null.</exception>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbOrderedDictionary`2.KeyCollection.CopyTo(`0[],System.Int32)">
+            <summary>Copies the <see cref="T:SfbOrderedDictionary`2.KeyCollection"></see> elements to an existing one-dimensional <see cref="T:System.Array"></see>, starting at the specified array index.</summary>
+            <param name="array">The one-dimensional <see cref="T:System.Array"></see> that is the destination of the elements copied from <see cref="T:SfbOrderedDictionary`2.KeyCollection"></see>. The <see cref="T:System.Array"></see> must have zero-based indexing.</param>
+            <param name="index">The zero-based index in array at which copying begins.</param>
+            <exception cref="T:System.ArgumentNullException">array is null. </exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">index is less than zero.</exception>
+            <exception cref="T:System.ArgumentException">index is equal to or greater than the length of array.-or-The number of elements in the source <see cref="T:SfbOrderedDictionary`2.KeyCollection"></see> is greater than the available space from index to the end of the destination array.</exception>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbOrderedDictionary`2.KeyCollection.GetEnumerator">
+            <summary>Returns an enumerator that iterates through the <see cref="T:SfbOrderedDictionary`2.KeyCollection"></see>.</summary>
+            <returns>A <see cref="T:SfbOrderedDictionary`2.KeyCollection.Enumerator"></see> for the <see cref="T:SfbOrderedDictionary`2.KeyCollection"></see>.</returns>
+        </member>
+        <member name="P:Cforge.Collections.Unknow.SfbOrderedDictionary`2.KeyCollection.Count">
+            <summary>Gets the number of elements contained in the <see cref="T:SfbOrderedDictionary`2.KeyCollection"></see>.</summary>
+            <returns>The number of elements contained in the <see cref="T:SfbOrderedDictionary`2.KeyCollection"></see>.Retrieving the value of this property is an O(1) operation.</returns>
+        </member>
+        <member name="T:Cforge.Collections.Unknow.SfbOrderedDictionary`2.KeyCollection.Enumerator">
+            <summary>Enumerates the elements of a <see cref="T:SfbOrderedDictionary`2.KeyCollection"></see>.</summary>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbOrderedDictionary`2.KeyCollection.Enumerator.Dispose">
+            <summary>Releases all resources used by the <see cref="T:SfbOrderedDictionary`2.KeyCollection.Enumerator"></see>.</summary>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbOrderedDictionary`2.KeyCollection.Enumerator.MoveNext">
+            <summary>Advances the enumerator to the next element of the <see cref="T:SfbOrderedDictionary`2.KeyCollection"></see>.</summary>
+            <returns>true if the enumerator was successfully advanced to the next element; false if the enumerator has passed the end of the collection.</returns>
+            <exception cref="T:System.InvalidOperationException">The collection was modified after the enumerator was created. </exception>
+        </member>
+        <member name="P:Cforge.Collections.Unknow.SfbOrderedDictionary`2.KeyCollection.Enumerator.Current">
+            <summary>Gets the element at the current position of the enumerator.</summary>
+            <returns>The element in the <see cref="T:SfbOrderedDictionary`2.KeyCollection"></see> at the current position of the enumerator.</returns>
+        </member>
+        <member name="T:Cforge.Collections.Unknow.SfbOrderedDictionary`2.ValueCollection">
+            <summary>Represents the collection of values in a <see cref="T:SfbOrderedDictionary`2"></see>. This class cannot be inherited.</summary>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbOrderedDictionary`2.ValueCollection.#ctor(Cforge.Collections.Unknow.SfbOrderedDictionary{`0,`1})">
+            <summary>Initializes a new instance of the <see cref="T:SfbOrderedDictionary`2.ValueCollection"></see> class that reflects the values in the specified <see cref="T:SfbOrderedDictionary`2"></see>.</summary>
+            <param name="dictionary">The <see cref="T:SfbOrderedDictionary`2"></see> whose values are reflected in the new <see cref="T:SfbOrderedDictionary`2.ValueCollection"></see>.</param>
+            <exception cref="T:System.ArgumentNullException">dictionary is null.</exception>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbOrderedDictionary`2.ValueCollection.CopyTo(`1[],System.Int32)">
+            <summary>Copies the <see cref="T:SfbOrderedDictionary`2.ValueCollection"></see> elements to an existing one-dimensional <see cref="T:System.Array"></see>, starting at the specified array index.</summary>
+            <param name="array">The one-dimensional <see cref="T:System.Array"></see> that is the destination of the elements copied from <see cref="T:SfbOrderedDictionary`2.ValueCollection"></see>. The <see cref="T:System.Array"></see> must have zero-based indexing.</param>
+            <param name="index">The zero-based index in array at which copying begins.</param>
+            <exception cref="T:System.ArgumentException">index is equal to or greater than the length of array.-or-The number of elements in the source <see cref="T:SfbOrderedDictionary`2.ValueCollection"></see> is greater than the available space from index to the end of the destination array.</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">index is less than zero.</exception>
+            <exception cref="T:System.ArgumentNullException">array is null.</exception>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbOrderedDictionary`2.ValueCollection.GetEnumerator">
+            <summary>Returns an enumerator that iterates through the <see cref="T:SfbOrderedDictionary`2.ValueCollection"></see>.</summary>
+            <returns>A <see cref="T:SfbOrderedDictionary`2.ValueCollection.Enumerator"></see> for the <see cref="T:SfbOrderedDictionary`2.ValueCollection"></see>.</returns>
+        </member>
+        <member name="P:Cforge.Collections.Unknow.SfbOrderedDictionary`2.ValueCollection.Count">
+            <summary>Gets the number of elements contained in the <see cref="T:SfbOrderedDictionary`2.ValueCollection"></see>.</summary>
+            <returns>The number of elements contained in the <see cref="T:SfbOrderedDictionary`2.ValueCollection"></see>.</returns>
+        </member>
+        <member name="T:Cforge.Collections.Unknow.SfbOrderedDictionary`2.ValueCollection.Enumerator">
+            <summary>Enumerates the elements of a <see cref="T:SfbOrderedDictionary`2.ValueCollection"></see>.</summary>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbOrderedDictionary`2.ValueCollection.Enumerator.Dispose">
+            <summary>Releases all resources used by the <see cref="T:SfbOrderedDictionary`2.ValueCollection.Enumerator"></see>.</summary>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbOrderedDictionary`2.ValueCollection.Enumerator.MoveNext">
+            <summary>Advances the enumerator to the next element of the <see cref="T:SfbOrderedDictionary`2.ValueCollection"></see>.</summary>
+            <returns>true if the enumerator was successfully advanced to the next element; false if the enumerator has passed the end of the collection.</returns>
+            <exception cref="T:System.InvalidOperationException">The collection was modified after the enumerator was created. </exception>
+        </member>
+        <member name="P:Cforge.Collections.Unknow.SfbOrderedDictionary`2.ValueCollection.Enumerator.Current">
+            <summary>Gets the element at the current position of the enumerator.</summary>
+            <returns>The element in the <see cref="T:SfbOrderedDictionary`2.ValueCollection"></see> at the current position of the enumerator.</returns>
+        </member>
+        <member name="T:Cforge.Collections.Unknow.SfbOrderedDictionary`2.OrderedValueCollection">
+            <summary>Represents the collection of orderedValues in a <see cref="T:SfbOrderedDictionary`2"></see>. This class cannot be inherited.</summary>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbOrderedDictionary`2.OrderedValueCollection.#ctor(Cforge.Collections.Unknow.SfbOrderedDictionary{`0,`1})">
+            <summary>Initializes a new instance of the <see cref="T:SfbOrderedDictionary`2.OrderedValueCollection"></see> class that reflects the orderedValues in the specified <see cref="T:SfbOrderedDictionary`2"></see>.</summary>
+            <param name="dictionary">The <see cref="T:SfbOrderedDictionary`2"></see> whose orderedValues are reflected in the new <see cref="T:SfbOrderedDictionary`2.OrderedValueCollection"></see>.</param>
+            <exception cref="T:System.ArgumentNullException">dictionary is null.</exception>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbOrderedDictionary`2.OrderedValueCollection.CopyTo(`1[],System.Int32)">
+            <summary>Copies the <see cref="T:SfbOrderedDictionary`2.OrderedValueCollection"></see> elements to an existing one-dimensional <see cref="T:System.Array"></see>, starting at the specified array index.</summary>
+            <param name="array">The one-dimensional <see cref="T:System.Array"></see> that is the destination of the elements copied from <see cref="T:SfbOrderedDictionary`2.OrderedValueCollection"></see>. The <see cref="T:System.Array"></see> must have zero-based indexing.</param>
+            <param name="index">The zero-based index in array at which copying begins.</param>
+            <exception cref="T:System.ArgumentException">index is equal to or greater than the length of array.-or-The number of elements in the source <see cref="T:SfbOrderedDictionary`2.OrderedValueCollection"></see> is greater than the available space from index to the end of the destination array.</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">index is less than zero.</exception>
+            <exception cref="T:System.ArgumentNullException">array is null.</exception>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbOrderedDictionary`2.OrderedValueCollection.GetEnumerator">
+            <summary>Returns an enumerator that iterates through the <see cref="T:SfbOrderedDictionary`2.OrderedValueCollection"></see>.</summary>
+            <returns>A <see cref="T:SfbOrderedDictionary`2.OrderedValueCollection.Enumerator"></see> for the <see cref="T:SfbOrderedDictionary`2.OrderedValueCollection"></see>.</returns>
+        </member>
+        <member name="P:Cforge.Collections.Unknow.SfbOrderedDictionary`2.OrderedValueCollection.Count">
+            <summary>Gets the number of elements contained in the <see cref="T:SfbOrderedDictionary`2.OrderedValueCollection"></see>.</summary>
+            <returns>The number of elements contained in the <see cref="T:SfbOrderedDictionary`2.OrderedValueCollection"></see>.</returns>
+        </member>
+        <member name="T:Cforge.Collections.Unknow.SfbOrderedDictionary`2.OrderedValueCollection.Enumerator">
+            <summary>Enumerates the elements of a <see cref="T:SfbOrderedDictionary`2.OrderedValueCollection"></see>.</summary>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbOrderedDictionary`2.OrderedValueCollection.Enumerator.Dispose">
+            <summary>Releases all resources used by the <see cref="T:SfbOrderedDictionary`2.OrderedValueCollection.Enumerator"></see>.</summary>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbOrderedDictionary`2.OrderedValueCollection.Enumerator.MoveNext">
+            <summary>Advances the enumerator to the next element of the <see cref="T:SfbOrderedDictionary`2.OrderedValueCollection"></see>.</summary>
+            <returns>true if the enumerator was successfully advanced to the next element; false if the enumerator has passed the end of the collection.</returns>
+            <exception cref="T:System.InvalidOperationException">The collection was modified after the enumerator was created. </exception>
+        </member>
+        <member name="P:Cforge.Collections.Unknow.SfbOrderedDictionary`2.OrderedValueCollection.Enumerator.Current">
+            <summary>Gets the element at the current position of the enumerator.</summary>
+            <returns>The element in the <see cref="T:SfbOrderedDictionary`2.OrderedValueCollection"></see> at the current position of the enumerator.</returns>
+        </member>
+        <member name="T:Cforge.Collections.Unknow.SfbStringCollection">
+            <summary>Represents a collection of strings.</summary>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbStringCollection.Add(System.String)">
+            <summary>Adds a string to the end of the <see cref="T:Cforge.Collections.Unknow.SfbStringCollection"></see>.</summary>
+            <returns>The zero-based index at which the new element is inserted.</returns>
+            <param name="value">The string to add to the end of the <see cref="T:Cforge.Collections.Unknow.SfbStringCollection"></see>. The value can be null. </param>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbStringCollection.AddRange(System.String[])">
+            <summary>Copies the elements of a string array to the end of the <see cref="T:Cforge.Collections.Unknow.SfbStringCollection"></see>.</summary>
+            <param name="value">An array of strings to add to the end of the <see cref="T:Cforge.Collections.Unknow.SfbStringCollection"></see>. The array itself can not be null but it can contain elements that are null. </param>
+            <exception cref="T:System.ArgumentNullException">value is null. </exception>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbStringCollection.Clear">
+            <summary>Removes all the strings from the <see cref="T:Cforge.Collections.Unknow.SfbStringCollection"></see>.</summary>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbStringCollection.Contains(System.String)">
+            <summary>Determines whether the specified string is in the <see cref="T:Cforge.Collections.Unknow.SfbStringCollection"></see>.</summary>
+            <returns>true if value is found in the <see cref="T:Cforge.Collections.Unknow.SfbStringCollection"></see>; otherwise, false.</returns>
+            <param name="value">The string to locate in the <see cref="T:Cforge.Collections.Unknow.SfbStringCollection"></see>. The value can be null. </param>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbStringCollection.CheckWildcards(System.String)">
+            <summary>
+            Checks to see whether the item matches patterns defined in the list, case-insensitive comparison.
+            </summary>
+            <returns>The Zero-based index of the matched item in the list. Value -1 means the string does not match with any item.</returns>
+            <example>
+                The following example demonstrates how to check a string with patterns defined in
+                the list.
+                <code lang="CS" title="Using CheckWildcards">
+            using System;
+            using System.Collections.Generic;
+            using System.Text;
+            using Cforge;
+             
+            namespace SampleCodes
+            {
+                class SfbStringCollectionCheckWilcards
+                {
+                    [STAThread]
+                    static void Main(string[] args)
+                    {
+                        SfbStringCollectionCheckWilcardsTest();
+                    }
+             
+                    public static void SfbStringCollectionCheckWilcardsTest()
+                    {
+                        SfbStringCollection sc = new SfbStringCollection();
+                        sc.Add("bad ????.*");
+                        
+                        bool checkResult;
+             
+                        // Case-insensitive checking
+                        checkResult = sc.CheckWildcards("bad name.test") != -1; // checkResult is true after the call.
+                        
+                        // Case-sensitive checking
+                        checkResult = sc.CheckWildcards("bad Name.test", false) != -1; // checkResult is false after the call.            
+                    }
+                }
+            }
+                </code>
+            	<code lang="VB" title="Using CheckWildcards">
+            Imports System
+            Imports System.Collections.Generic
+            Imports System.Text
+            Imports Cforge
+             
+            Namespace SampleCodes
+                Class SfbStringCollectionCheckWilcards
+                    &lt;STAThread()&gt; _
+                    Private Shared Sub Main(ByVal args As String())
+                        SfbStringCollectionCheckWilcardsTest()
+                    End Sub
+             
+                    Public Shared Sub SfbStringCollectionCheckWilcardsTest()
+                        Dim sc As New SfbStringCollection()
+                        sc.Add("bad ????.*")
+             
+                        Dim checkResult As Boolean
+             
+                        ' Case-insensitive checking
+                        checkResult = sc.CheckWildcards("bad name.test") &lt;&gt; -1
+                        ' checkResult is true after the call.
+                        ' Case-sensitive checking
+                        checkResult = sc.CheckWildcards("bad Name.test", False) &lt;&gt; -1
+                        ' checkResult is false after the call.            
+                    End Sub
+                End Class
+            End Namespace
+                </code>
+            </example>
+            <param name="value">String to check.</param>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbStringCollection.CheckWildcards(System.String,System.Boolean)">
+            <summary>
+            Checks to see whether the item matches patterns defined in the list, ignoring or honoring their case.
+            </summary>
+            <returns>The Zero-based index of the matched item in the list. Value -1 means the string does not match with any item.</returns>
+            <example>
+                The following example demonstrates how to check a string with patterns defined in
+                the list.
+                <code lang="VB" title="Using CheckWildcards">
+            Imports System
+            Imports System.Collections.Generic
+            Imports System.Text
+            Imports Cforge
+             
+            Namespace SampleCodes
+                Class SfbStringCollectionCheckWilcards
+                    &lt;STAThread()&gt; _
+                    Private Shared Sub Main(ByVal args As String())
+                        SfbStringCollectionCheckWilcardsTest()
+                    End Sub
+             
+                    Public Shared Sub SfbStringCollectionCheckWilcardsTest()
+                        Dim sc As New SfbStringCollection()
+                        sc.Add("bad ????.*")
+             
+                        Dim checkResult As Boolean
+             
+                        ' Case-insensitive checking
+                        checkResult = sc.CheckWildcards("bad name.test") &lt;&gt; -1
+                        ' checkResult is true after the call.
+                        ' Case-sensitive checking
+                        checkResult = sc.CheckWildcards("bad Name.test", False) &lt;&gt; -1
+                        ' checkResult is false after the call.            
+                    End Sub
+                End Class
+            End Namespace
+                </code>
+            	<code lang="CS" title="Using CheckWildcards">
+            using System;
+            using System.Collections.Generic;
+            using System.Text;
+            using Cforge;
+             
+            namespace SampleCodes
+            {
+                class SfbStringCollectionCheckWilcards
+                {
+                    [STAThread]
+                    static void Main(string[] args)
+                    {
+                        SfbStringCollectionCheckWilcardsTest();
+                    }
+             
+                    public static void SfbStringCollectionCheckWilcardsTest()
+                    {
+                        SfbStringCollection sc = new SfbStringCollection();
+                        sc.Add("bad ????.*");
+                        
+                        bool checkResult;
+             
+                        // Case-insensitive checking
+                        checkResult = sc.CheckWildcards("bad name.test") != -1; // checkResult is true after the call.
+                        
+                        // Case-sensitive checking
+                        checkResult = sc.CheckWildcards("bad Name.test", false) != -1; // checkResult is false after the call.            
+                    }
+                }
+            }
+                </code>
+            </example>
+            <param name="value">String to check.</param>
+            <param name="ignoreCase">A <see cref="T:System.Boolean"/> indicating a case-sensitive or insensitive comparison. (true indicates a case-insensitive comparison.)</param>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbStringCollection.CopyTo(System.String[],System.Int32)">
+            <summary>Copies the entire <see cref="T:Cforge.Collections.Unknow.SfbStringCollection"></see> values to a one-dimensional array of strings, starting at the specified index of the target array.</summary>
+            <param name="array">The one-dimensional array of strings that is the destination of the elements copied from <see cref="T:Cforge.Collections.Unknow.SfbStringCollection"></see>. The <see cref="T:System.Array"></see> must have zero-based indexing. </param>
+            <param name="index">The zero-based index in array at which copying begins. </param>
+            <exception cref="T:System.ArgumentNullException">array is null. </exception>
+            <exception cref="T:System.InvalidCastException">The type of the source <see cref="T:Cforge.Collections.Unknow.SfbStringCollection"></see> cannot be cast automatically to the type of the destination array. </exception>
+            <exception cref="T:System.ArgumentException">array is multidimensional.-or- index is equal to or greater than the length of array.-or- The number of elements in the source <see cref="T:Cforge.Collections.Unknow.SfbStringCollection"></see> is greater than the available space from index to the end of the destination array. </exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">index is less than zero. </exception>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbStringCollection.GetEnumerator">
+            <summary>Returns a <see cref="T:System.Collections.Specialized.StringEnumerator"></see> that iterates through the <see cref="T:Cforge.Collections.Unknow.SfbStringCollection"></see>.</summary>
+            <returns>A <see cref="T:System.Collections.Specialized.StringEnumerator"></see> for the <see cref="T:Cforge.Collections.Unknow.SfbStringCollection"></see>.</returns>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbStringCollection.IndexOf(System.String)">
+            <summary>Searches for the specified string and returns the zero-based index of the first occurrence within the <see cref="T:Cforge.Collections.Unknow.SfbStringCollection"></see>.</summary>
+            <returns>The zero-based index of the first occurrence of value in the <see cref="T:Cforge.Collections.Unknow.SfbStringCollection"></see>, if found; otherwise, -1.</returns>
+            <param name="value">The string to locate. The value can be null. </param>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbStringCollection.Insert(System.Int32,System.String)">
+            <summary>Inserts a string into the <see cref="T:Cforge.Collections.Unknow.SfbStringCollection"></see> at the specified index.</summary>
+            <param name="value">The string to insert. The value can be null. </param>
+            <param name="index">The zero-based index at which value is inserted. </param>
+            <exception cref="T:System.ArgumentOutOfRangeException">index is less than zero.-or- index greater than <see cref="P:System.Collections.Specialized.StringCollection.Count"></see>. </exception>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbStringCollection.Remove(System.String)">
+            <summary>Removes the first occurrence of a specific string from the <see cref="T:Cforge.Collections.Unknow.SfbStringCollection"></see>.</summary>
+            <param name="value">The string to remove from the <see cref="T:Cforge.Collections.Unknow.SfbStringCollection"></see>. The value can be null. </param>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbStringCollection.RemoveAt(System.Int32)">
+            <summary>Removes the string at the specified index of the <see cref="T:Cforge.Collections.Unknow.SfbStringCollection"></see>.</summary>
+            <param name="index">The zero-based index of the string to remove. </param>
+            <exception cref="T:System.ArgumentOutOfRangeException">index is less than zero.-or- index is equal to or greater than <see cref="P:System.Collections.Specialized.StringCollection.Count"></see>. </exception>
+        </member>
+        <member name="M:Cforge.Collections.Unknow.SfbStringCollection.LoadFromFile(System.String)">
+            <summary>
+            Loads a list of strings from a file.
+            </summary>
+            <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid, such as being on an unmapped drive.</exception>
+            <exception cref="T:System.ArgumentException">path is an empty string ("").</exception>
+            <exception cref="T:System.ArgumentNullException">path is null.</exception>
+            <exception cref="T:System.IO.IOException">path includes an incorrect or invalid syntax for file name, directory name, or volume label.</exception>
+            <exception cref="T:System.IO.FileNotFoundException">The file cannot be found.</exception>
+            <example>
+                The following example demonstrates how to load a list of strings from a text file
+                to the <see cref="T:Cforge.Collections.Unknow.SfbStringCollection">SfbStringCollection</see>.
+                <code lang="CS" title="Using LoadFromFile">
+            using System;
+            using System.Collections.Generic;
+            using System.Text;
+            using System.Windows.Forms;
+            using Cforge;
+             
+            namespace SampleCodes
+            {
+                class SfbStringCollectionLoadFromFile
+                {
+                    [STAThread]
+                    static void Main(string[] args)
+                    {
+                        SfbStringCollectionLoadFromFileTest();
+                    }
+             
+                    public static void SfbStringCollectionLoadFromFileTest()
+                    {
+                        try
+                        {
+                            SfbStringCollection sc = new SfbStringCollection();
+                            
+                            // list.txt content:
+                            // a???m is good
+                            // sta*
+                            sc.LoadFromFile("list.txt");
+                            bool checkResult;
+             
+                            checkResult = sc.CheckWildcards("ams") != -1; // checkResult will be false.
+                            checkResult = sc.CheckWildcards("a00m is good") != -1; // checkResult will be true.
+                            checkResult = sc.CheckWildcards("a00m is goOD", true) != -1; // checkResult will be false.
+                        }
+                        catch (Exception exc)
+                        {
+                            MessageBox.Show("Error: " + exc.Message);
+                        }
+                    }
+                }
+            }
+                </code>
+            	<code lang="VB" title="Using LoadFromFile">
+            Imports System
+            Imports System.Collections.Generic
+            Imports System.Text
+            Imports System.Windows.Forms
+            Imports Cforge
+             
+            Namespace SampleCodes
+                Class SfbStringCollectionLoadFromFile
+                    &lt;STAThread()&gt; _
+                    Private Shared Sub Main(ByVal args As String())
+                        SfbStringCollectionLoadFromFileTest()
+                    End Sub
+             
+                    Public Shared Sub SfbStringCollectionLoadFromFileTest()
+                        Try
+                            Dim sc As New SfbStringCollection()
+             
+                            ' list.txt content:
+                            ' a???m is good
+                            ' sta*
+                            sc.LoadFromFile("list.txt")
+                            Dim checkResult As Boolean
+             
+                            checkResult = sc.CheckWildcards("ams") &lt;&gt; -1
+                            ' checkResult will be false.
+                            checkResult = sc.CheckWildcards("a00m is good") &lt;&gt; -1
+                            ' checkResult will be true.
+                                ' checkResult will be false.
+                            checkResult = sc.CheckWildcards("a00m is goOD", True) &lt;&gt; -1
+                        Catch exc As Exception
+                            MessageBox.Show("Error: " + exc.Message)
+                        End Try
+                    End Sub
+                End Class
+            End Namespace
+                </code>
+            </example>
+            <param name="file">Path to the file to load.</param>
+        </member>
+        <member name="P:Cforge.Collections.Unknow.SfbStringCollection.Count">
+            <summary>Gets the number of strings contained in the <see cref="T:Cforge.Collections.Unknow.SfbStringCollection"></see>.</summary>
+            <returns>The number of strings contained in the <see cref="T:Cforge.Collections.Unknow.SfbStringCollection"></see>.</returns>
+        </member>
+        <member name="P:Cforge.Collections.Unknow.SfbStringCollection.IsReadOnly">
+            <summary>Gets a value indicating whether the <see cref="T:Cforge.Collections.Unknow.SfbStringCollection"></see> is read-only.</summary>
+            <returns>This property always returns false.</returns>
+        </member>
+        <member name="P:Cforge.Collections.Unknow.SfbStringCollection.IsSynchronized">
+            <summary>Gets a value indicating whether access to the <see cref="T:Cforge.Collections.Unknow.SfbStringCollection"></see> is synchronized (thread safe).</summary>
+            <returns>This property always returns false.</returns>
+        </member>
+        <member name="P:Cforge.Collections.Unknow.SfbStringCollection.Item(System.Int32)">
+            <summary>Gets or sets the element at the specified index.</summary>
+            <returns>The element at the specified index.</returns>
+            <param name="index">The zero-based index of the entry to get or set. </param>
+            <exception cref="T:System.ArgumentOutOfRangeException">index is less than zero.-or- index is equal to or greater than <see cref="P:System.Collections.Specialized.StringCollection.Count"></see>. </exception>
+        </member>
+        <member name="P:Cforge.Collections.Unknow.SfbStringCollection.SyncRoot">
+            <summary>Gets an object that can be used to synchronize access to the <see cref="T:Cforge.Collections.Unknow.SfbStringCollection"></see>.</summary>
+            <returns>An object that can be used to synchronize access to the <see cref="T:Cforge.Collections.Unknow.SfbStringCollection"></see>.</returns>
+        </member>
+        <member name="P:Cforge.Collections.Unknow.SfbStringCollection.IsFixedSize">
+            <summary>
+            Gets or sets information that indicates that this facet is fixed.
+            </summary>
+            <value>If true, value is fixed; otherwise, false. The default is false. Optional.</value>
+        </member>
+        <member name="T:Cforge.Licensing.Captcha.SfbLicenseExceptionStatus">
+            <summary>
+            License check status.
+            </summary>
+            <exclude/>
+            <excludetoc/>
+        </member>
+        <member name="F:Cforge.Licensing.Captcha.SfbLicenseExceptionStatus.UnableToValidate">
+            <summary>
+            SfbLicenseManager was unable to validate the license.
+            </summary>
+        </member>
+        <member name="F:Cforge.Licensing.Captcha.SfbLicenseExceptionStatus.KeyNotSigned">
+            <summary>
+            The key is not signed.
+            </summary>
+        </member>
+        <member name="F:Cforge.Licensing.Captcha.SfbLicenseExceptionStatus.InvalidKey">
+            <summary>
+            Invalid license key.
+            </summary>
+        </member>
+        <member name="F:Cforge.Licensing.Captcha.SfbLicenseExceptionStatus.UnableToRead">
+            <summary>
+            Unable to read license data.
+            </summary>
+        </member>
+        <member name="F:Cforge.Licensing.Captcha.SfbLicenseExceptionStatus.InvalidDate">
+            <summary>
+            Expiry date is invalid.
+            </summary>
+        </member>
+        <member name="F:Cforge.Licensing.Captcha.SfbLicenseExceptionStatus.LicenseExpired">
+            <summary>
+            License is expired.
+            </summary>
+        </member>
+        <member name="T:Cforge.Licensing.Captcha.SfbLicenseException">
+            <summary>Represents the License Exception.</summary>
+            <exclude/>
+            <excludetoc/>
+        </member>
+        <member name="M:Cforge.Licensing.Captcha.SfbLicenseException.#ctor">
+            <summary>Initializes a new instance of the <see cref="T:Cforge.Licensing.Captcha.SfbLicenseException"></see> class. </summary>
+        </member>
+        <member name="M:Cforge.Licensing.Captcha.SfbLicenseException.#ctor(System.String)">
+            <summary>Initializes a new instance of the <see cref="T:Cforge.Licensing.Captcha.SfbLicenseException"></see> class with the specified error message.</summary>
+            <param _name="message">A <see cref="T:System.String"></see> that describes the error that occurred.</param>
+        </member>
+        <member name="M:Cforge.Licensing.Captcha.SfbLicenseException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Initializes a new instance of the <see cref="T:Cforge.Licensing.Captcha.SfbLicenseException"></see> class from the specified instances of the <see cref="T:System.Runtime.Serialization.SerializationInfo"></see> and <see cref="T:System.Runtime.Serialization.StreamingContext"></see> classes. </summary>
+            <param _name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo"></see> that contains the information required to serialize the new <see cref="T:Cforge.Licensing.Captcha.SfbLicenseException"></see>. </param>
+            <param _name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext"></see> that contains the source and destination of the serialized stream associated with the new instance. </param>
+        </member>
+        <member name="M:Cforge.Licensing.Captcha.SfbLicenseException.#ctor(System.String,System.Exception)">
+            <summary>Initializes a new instance of the <see cref="T:Cforge.Licensing.Captcha.SfbLicenseException"></see> class with the specified error message and inner exception.</summary>
+            <param _name="message">A <see cref="T:System.String"></see> that describes the error that occurred.</param>
+            <param _name="innerException">The exception that is the cause of the current exception. </param>
+        </member>
+        <member name="M:Cforge.Licensing.Captcha.SfbLicenseException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo"></see> instance with the _data needed to serialize the <see cref="T:Cforge.Licensing.Captcha.SfbLicenseException"></see>.</summary>
+            <param _name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo"></see> to populate with _data. </param>
+            <param _name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext"></see> that specifies the destination for this serialization.</param>
+        </member>
+        <member name="P:Cforge.Licensing.Captcha.SfbLicenseException.Status">
+            <summary>Gets the error code.</summary>
+            <returns>An <see cref="T:Cforge.Licensing.Captcha.SfbLicenseExceptionStatus"></see> value that indicates the error that occurred.</returns>
+        </member>
+        <member name="T:Cforge.Licensing.Captcha.SfbLicenseManager">
+            <summary>
+            ComponentForge License Manager.
+            </summary>
+            <exclude/>
+            <excludetoc/>
+        </member>
+        <member name="P:Cforge.Licensing.Captcha.SfbLicenseManager.RemainingDays">
+            <summary>
+            Gets remaining trial days.
+            </summary>
+        </member>
+        <member name="T:Cforge.Web.UI.WebControls.Ide.Common.Captcha.ProjectManagement">
+            <summary>
+            Utility class for Design - Time VisualStudio.NET project management.
+            </summary>
+        </member>
+        <member name="T:Cforge.CaptchaUtils.PropertyCategory">
+            <summary>
+            Defines the common property categories' names
+            </summary>
+        </member>
+        <member name="M:Cforge.CaptchaUtils.XtremeControl.OnPreRender(System.EventArgs)">
+            <exclude/>
+            <excludetoc/>
+        </member>
+        <member name="P:Cforge.CaptchaUtils.XtremeControl.Version">
+            <summary>Gets the component's current version.</summary>
+        </member>
+        <member name="T:Cforge.Web.UI.WebControls.CaptchaHttpHandler">
+            <summary>
+            The HttpHandler that is used for rendering CAPTCHA images and generating sound data.
+            </summary>
+        </member>
+        <member name="T:Cforge.Web.UI.WebControls.CaptchaStyle">
+            <summary>
+            Specifies the captcha text styles.
+            </summary>
+        </member>
+        <member name="T:Cforge.Web.UI.WebControls.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Error_CannotEnumerate">
+            <summary>
+              Looks up a localized string similar to Cannot enumerate the given collection. It must be enumerable.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Error_CannotImplicitlyConvertTypes">
+            <summary>
+              Looks up a localized string similar to Cannot implicitly convert from &apos;{0}&apos; to &apos;{1}&apos;.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Error_ErrorCalling">
+            <summary>
+              Looks up a localized string similar to Error calling &apos;{0}&apos;, an exception has thrown: &apos;{1}&apos;.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Error_ErrorMessage">
+            <summary>
+              Looks up a localized string similar to Error at line: {0} - column: {1}, {2}..
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Error_ExpressionIsNotExpected">
+            <summary>
+              Looks up a localized string similar to Expression &apos;{0}&apos; is not expected.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Error_FunctionNotFound">
+            <summary>
+              Looks up a localized string similar to Function &apos;{0}&apos; not found or arguments are invalid.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Error_IndexOutOfRange">
+            <summary>
+              Looks up a localized string similar to Index is out of range, must be from {0} to {1}.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Error_InvalidCasting">
+            <summary>
+              Looks up a localized string similar to Invalid casting.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Error_InvalidCastingParameter">
+            <summary>
+              Looks up a localized string similar to Invalid casting parameter number {0} in method &apos;{1}&apos; from &apos;{2}&apos; to &apos;{3}&apos;.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Error_InvalidFromExpression">
+            <summary>
+              Looks up a localized string similar to Invalid &apos;from&apos; expression, it must be an integer.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Error_InvalidNumberOfArguments">
+            <summary>
+              Looks up a localized string similar to Passed {0} arguments but function {1} needs {2} arguments.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Error_InvalidNumberOfArgumentsFromTo">
+            <summary>
+              Looks up a localized string similar to Passed {0} arguments but function {1} needs {2}-&gt;{3} arguments.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Error_InvalidToExpression">
+            <summary>
+              Looks up a localized string similar to Invalid &apos;to&apos; expression, it must be an integer.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Error_OperatorOnThisExpressionIsNotAllowed">
+            <summary>
+              Looks up a localized string similar to Operator &apos;{0}&apos; on the expression &apos;{1}&apos; is not allowed.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Error_ParameterCannotBeConvertedToChar">
+            <summary>
+              Looks up a localized string similar to Parameter &apos;{0}&apos; cannot be converted to char.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Error_ParameterCannotBeConvertedToInt">
+            <summary>
+              Looks up a localized string similar to Parameter &apos;{0}&apos; cannot be converted to int type.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Error_ParameterCannotBeEmpty">
+            <summary>
+              Looks up a localized string similar to Parameter cannot be empty.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Error_PropertyNotFound">
+            <summary>
+              Looks up a localized string similar to Property &apos;{0}&apos; not found.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Error_TemplateNotFound">
+            <summary>
+              Looks up a localized string similar to Template &apos;{0}&apos; not found or body is not defined.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Error_TheNameDoesNotExist">
+            <summary>
+              Looks up a localized string similar to The name &apos;{0}&apos; does not exist.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Error_UnrecognizedExceptionStatus">
+            <summary>
+              Looks up a localized string similar to Unrecognized Exception Status (&apos;{0}&apos;)..
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Error_VariableNotFound">
+            <summary>
+              Looks up a localized string similar to Variable &apos;{0}&apos; not found.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Exception_BaseClassNotFound">
+            <summary>
+              Looks up a localized string similar to Template base class &apos;{0}&apos; not found..
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Exception_GeneralFailure">
+            <summary>
+              Looks up a localized string similar to General failure. {0}..
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Exception_MissedParameters">
+            <summary>
+              Looks up a localized string similar to The following required parameters for template &apos;{0}&apos; are not set: &apos;{1}&apos;..
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Exception_ParameterCannotBeEmpty">
+            <summary>
+              Looks up a localized string similar to Parameter &apos;{0}&apos; cannot be empty..
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Exception_ParserExpectingAnotherToken">
+            <summary>
+              Looks up a localized string similar to Token &apos;{0}&apos; is not expected, expecting: &apos;{1}&apos;..
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Exception_ParserInvalidException_ParserInvalidToken">
+            <summary>
+              Looks up a localized string similar to The token is invalid: &apos;{0}&apos;..
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Exception_ParserInvalidParsingMode">
+            <summary>
+              Looks up a localized string similar to Invalid parsing mode: {0}..
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Exception_ParserInvalidToken">
+            <summary>
+              Looks up a localized string similar to The token is invalid: &apos;{0}&apos;..
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Exception_ParserUnexpectedCharacter">
+            <summary>
+              Looks up a localized string similar to Unexpected character &apos;{0}&apos; in expression..
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Exception_ParserUnexpectedToken">
+            <summary>
+              Looks up a localized string similar to Token &apos;{0}&apos; is not expected..
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Exception_RestrictedMethod">
+            <summary>
+              Looks up a localized string similar to Method &apos;{0}&apos; is restricted..
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Exception_RestrictedProperty">
+            <summary>
+              Looks up a localized string similar to Property &apos;{0}&apos; is restricted..
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Exception_TemplateClassDoesNotImplementInheritedAbstractTemplate">
+            <summary>
+              Looks up a localized string similar to Template class &apos;{0}&apos; does not implement inherited abstract template &apos;{1}&apos;..
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Exception_TemplateInvalidAssignment">
+            <summary>
+              Looks up a localized string similar to Invalid assignment, left side must be a variable..
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Exception_TemplateInvalidDictionary">
+            <summary>
+              Looks up a localized string similar to Invalid dictionary initialization, the number of parameters must be even..
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Exception_TemplateInvalidElseIfStatement">
+            <summary>
+              Looks up a localized string similar to &apos;elseif&apos; must be placed inside &apos;if&apos;..
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Exception_TemplateInvalidElseStatement">
+            <summary>
+              Looks up a localized string similar to &apos;else&apos; must be placed inside &apos;if&apos;..
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Exception_TemplateInvalidForEachStatement">
+            <summary>
+              Looks up a localized string similar to Invalid &apos;foreach&apos; syntax. &apos;{0}&apos; is not expected..
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Exception_TemplateInvalidForStatement">
+            <summary>
+              Looks up a localized string similar to Invalid &apos;for&apos; syntax. &apos;{0}&apos; is not expected..
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Exception_TemplateInvalidOperator">
+            <summary>
+              Looks up a localized string similar to Invalid operator &apos;{0}&apos;..
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Exception_TemplateInvException_TemplateInvalidOperator">
+            <summary>
+              Looks up a localized string similar to Invalid operator &apos;{0}&apos;..
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Exception_TemplateOperatorNotExpected">
+            <summary>
+              Looks up a localized string similar to &apos;{0}&apos; is not expected, you must specify variable name that will be use to index..
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Exception_TemplateUnexpectedEndOfFile">
+            <summary>
+              Looks up a localized string similar to Unexpected end of file..
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Exception_TemplateUnexpectedTokebInString">
+            <summary>
+              Looks up a localized string similar to Unexpected token &apos;{0}&apos; in string..
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.Resources.Exception_TemplateUnexpectedToken">
+            <summary>
+              Looks up a localized string similar to The token &apos;{0}&apos; is not expected..
+            </summary>
+        </member>
+        <member name="T:Cforge.DynamicTemplateExceptionStatus">
+            <summary>Defines error codes for the <see cref="T:Cforge.NetXtremeDynamicTemplate"></see> class.</summary>
+        </member>
+        <member name="F:Cforge.DynamicTemplateExceptionStatus.Success">
+            <summary>The <see cref="T:Cforge.NetXtremeDynamicTemplate"></see> operation succeeded.</summary>
+        </member>
+        <member name="F:Cforge.DynamicTemplateExceptionStatus.ParserInvalidParsingMode">
+            <summary>
+            Invalid parsing mode.
+            </summary>
+        </member>
+        <member name="F:Cforge.DynamicTemplateExceptionStatus.ParserUnexpectedCharacter">
+            <summary>
+            The character is not expected in the expression.
+            </summary>
+        </member>
+        <member name="F:Cforge.DynamicTemplateExceptionStatus.ParserUnexpectedToken">
+            <summary>
+            The token is not expected.
+            </summary>
+        </member>
+        <member name="F:Cforge.DynamicTemplateExceptionStatus.ParserExpectingAnotherToken">
+            <summary>
+            The parser is expecting another token, not the given token.
+            </summary>
+        </member>
+        <member name="F:Cforge.DynamicTemplateExceptionStatus.ParserInvalidToken">
+            <summary>
+            The token is invalid.
+            </summary>
+        </member>
+        <member name="F:Cforge.DynamicTemplateExceptionStatus.TemplateInvalidOperator">
+            <summary>
+            Invalid operator.
+            </summary>
+        </member>
+        <member name="F:Cforge.DynamicTemplateExceptionStatus.TemplateInvalidAssignment">
+            <summary>
+            Invalid assignment, left side must be a variable.
+            </summary>
+        </member>
+        <member name="F:Cforge.DynamicTemplateExceptionStatus.TemplateInvalidElseIfStatement">
+            <summary>
+            Invalid elseif statement, elseif must be placed inside if.
+            </summary>
+        </member>
+        <member name="F:Cforge.DynamicTemplateExceptionStatus.TemplateInvalidElseStatement">
+            <summary>
+            Invalid else statement, else must be placed inside if.
+            </summary>
+        </member>
+        <member name="F:Cforge.DynamicTemplateExceptionStatus.TemplateOperatorNotExpected">
+            <summary>
+            Operator is not expected.
+            </summary>
+        </member>
+        <member name="F:Cforge.DynamicTemplateExceptionStatus.TemplateInvalidForEachStatement">
+            <summary>
+            Invalid foreach syntax.
+            </summary>
+        </member>
+        <member name="F:Cforge.DynamicTemplateExceptionStatus.TemplateInvalidForStatement">
+            <summary>
+            Invalid for syntax.
+            </summary>
+        </member>
+        <member name="F:Cforge.DynamicTemplateExceptionStatus.TemplateInvalidDictionary">
+            <summary>
+            Invalid dictionary initialization, the number of parameters must be even.
+            </summary>
+        </member>
+        <member name="F:Cforge.DynamicTemplateExceptionStatus.TemplateUnexpectedToken">
+            <summary>
+            The token is not expected.
+            </summary>
+        </member>
+        <member name="F:Cforge.DynamicTemplateExceptionStatus.TemplateUnexpectedEndOfFile">
+            <summary>
+            Unexpected end of file.
+            </summary>
+        </member>
+        <member name="F:Cforge.DynamicTemplateExceptionStatus.TemplateUnexpectedTokebInString">
+            <summary>
+            Unexpected token in string.               
+            </summary>
+        </member>
+        <member name="F:Cforge.DynamicTemplateExceptionStatus.PropertyRestricted">
+            <summary>
+            The property is restricted due to the security reason.
+            </summary>
+        </member>
+        <member name="F:Cforge.DynamicTemplateExceptionStatus.MethodRestricted">
+            <summary>
+            The method is restricted due to the security reason.
+            </summary>
+        </member>
+        <member name="F:Cforge.DynamicTemplateExceptionStatus.BaseClassNotFound">
+            <summary>
+            Template base class not found.
+            </summary>
+        </member>
+        <member name="F:Cforge.DynamicTemplateExceptionStatus.TemplateClassDoesNotImplementInheritedAbstractTemplate">
+            <summary>
+            Template class does not implement inherited abstract template.
+            </summary>
+        </member>
+        <member name="F:Cforge.DynamicTemplateExceptionStatus.GeneralFailure">
+            <summary>
+            General failure.
+            </summary>
+        </member>
+        <member name="T:Cforge.DynamicTemplateException">
+            <summary>
+            Represents the exception that is thrown when the DynamicTemplate is unable to process a template.
+            </summary>
+        </member>
+        <member name="M:Cforge.DynamicTemplateException.#ctor">
+            <summary>Initializes a new instance of the <see cref="T:Cforge.DynamicTemplateException"></see> class. </summary>
+        </member>
+        <member name="M:Cforge.DynamicTemplateException.#ctor(System.Int32,System.Int32,Cforge.DynamicTemplateExceptionStatus,System.Object[])">
+            <summary>Initializes a new instance of the <see cref="T:Cforge.DynamicTemplateException"></see> class with the specified error code.</summary>
+            <param name="line">Line number that has the error.</param>
+            <param name="column">Column number that has the error.</param>
+            <param name="status">An <see cref="T:Cforge.DynamicTemplateExceptionStatus"></see> value.</param>
+            <param name="parameters">An System.Object array containing zero or more objects to format.</param>
+        </member>
+        <member name="M:Cforge.DynamicTemplateException.#ctor(System.String)">
+            <summary>Initializes a new instance of the <see cref="T:Cforge.DynamicTemplateException"></see> class with the specified error message.</summary>
+            <param name="message">A <see cref="T:System.String"></see> that describes the error that occurred.</param>
+        </member>
+        <member name="M:Cforge.DynamicTemplateException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Initializes a new instance of the <see cref="T:Cforge.DynamicTemplateException"></see> class from the specified instances of the <see cref="T:System.Runtime.Serialization.SerializationInfo"></see> and <see cref="T:System.Runtime.Serialization.StreamingContext"></see> classes. </summary>
+            <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo"></see> that contains the information required to serialize the new <see cref="T:Cforge.DynamicTemplateException"></see>. </param>
+            <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext"></see> that contains the source and destination of the serialized stream associated with the new instance. </param>
+        </member>
+        <member name="M:Cforge.DynamicTemplateException.#ctor(System.String,System.Exception)">
+            <summary>Initializes a new instance of the <see cref="T:Cforge.DynamicTemplateException"></see> class with the specified error message and inner exception.</summary>
+            <param name="message">A <see cref="T:System.String"></see> that describes the error that occurred.</param>
+            <param name="innerException">The exception that is the cause of the current exception. </param>
+        </member>
+        <member name="M:Cforge.DynamicTemplateException.#ctor(System.Int32,System.Int32,System.Exception,Cforge.DynamicTemplateExceptionStatus,System.Object[])">
+            <summary>Initializes a new instance of the <see cref="T:Cforge.DynamicTemplateException"></see> class with the specified error code and inner exception.</summary>
+            <param name="line">Line number that has the error.</param>
+            <param name="column">Column number that has the error.</param>
+            <param name="innerException">The exception that is the cause of the current exception. </param>
+            <param name="status">An <see cref="T:Cforge.DynamicTemplateExceptionStatus"></see> value.</param>
+            <param name="parameters">An System.Object array containing zero or more objects to format.</param>
+        </member>
+        <member name="M:Cforge.DynamicTemplateException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo"></see> instance with the data needed to serialize the <see cref="T:Cforge.DynamicTemplateException"></see>.</summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo"></see> to populate with data. </param>
+            <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext"></see> that specifies the destination for this serialization.</param>
+        </member>
+        <member name="M:Cforge.DynamicTemplateException.ToString">
+            <summary>
+            A string representation of the current exception.
+            </summary>
+            <returns>A string representation of the current exception.</returns>
+        </member>
+        <member name="P:Cforge.DynamicTemplateException.Status">
+            <summary>Gets the error code returned by NetXtremeDynamicTemplate.</summary>
+            <returns>An <see cref="T:Cforge.DynamicTemplateExceptionStatus"></see> value that indicates the error that occurred.</returns>
+        </member>
+        <member name="P:Cforge.DynamicTemplateException.Line">
+            <summary>
+            Gets the line number that has the error.  
+            </summary>
+        </member>
+        <member name="P:Cforge.DynamicTemplateException.Column">
+            <summary>
+            Gets the column number that has the error.  
+            </summary>
+        </member>
+        <member name="T:Cforge.DynamicTemplateSettings">
+            <summary>
+            ComponentForge Dynamic Template Settings class.
+            </summary>
+        </member>
+        <member name="M:Cforge.DynamicTemplateSettings.#ctor">
+            <summary>
+            Initializes a new instance of the DynamicTemplateSettings.
+            </summary>
+        </member>
+        <member name="P:Cforge.DynamicTemplateSettings.BeginEndExpressionChar">
+            <summary>
+            Gets or sets the character which represents start and end expression. Default value is '$'.
+            </summary>
+        </member>
+        <member name="P:Cforge.DynamicTemplateSettings.BeginChar">
+            <summary>
+            Gets or sets the Begin character. Default value is '{'.
+            </summary>
+        </member>
+        <member name="P:Cforge.DynamicTemplateSettings.EndChar">
+            <summary>
+            Gets or sets the End character. Default value is '}'.
+            </summary>
+        </member>
+        <member name="P:Cforge.DynamicTemplateSettings.CommentChar">
+            <summary>
+            Gets or sets the comment character. Default value is '!'.
+            </summary>
+        </member>
+        <member name="P:Cforge.DynamicTemplateSettings.VariableTypeCheck">
+            <summary>
+            Gets or sets a boolean value indicating whether variable type will be checked. Default value is True.
+            </summary>
+            <remarks>
+            For example, if a variable is already initialized with a string value and you assign a value of int to it, an error message will be generated.
+            </remarks>
+        </member>
+        <member name="T:Cforge.TplRuntimeFunction">
+            <summary>
+            User-defined function.
+            </summary>
+            <param name="dt">NetXtremeDynamicTemplate object.</param>
+            <param name="args">arguments</param>
+            <returns>Object used to generate output content.</returns>
+        </member>
+        <member name="T:Cforge.DynamicTemplateCacheEventArgs">
+            <summary>
+            Provides data for <see cref="E:Cforge.NetXtremeDynamicTemplate.OnLoadTemplateFromCache"></see> and <see cref="E:Cforge.NetXtremeDynamicTemplate.OnSaveTemplateToCache"></see> Events.
+            </summary>
+        </member>
+        <member name="P:Cforge.DynamicTemplateCacheEventArgs.CacheName">
+            <summary>
+            Gets cache key name.
+            </summary>
+        </member>
+        <member name="P:Cforge.DynamicTemplateCacheEventArgs.CacheData">
+            <summary>
+            Gets or sets cache data.
+            </summary>
+        </member>
+        <member name="T:Cforge.NetXtremeDynamicTemplate">
+            <summary>
+            NetXtremeDynamicTemplate allows developers to generate text output from source template and input parameters effectively.
+            </summary>
+        </member>
+        <member name="M:Cforge.NetXtremeDynamicTemplate.#ctor">
+            <summary>
+            Initializes a new instance of the NetXtremeDynamicTemplate class.
+            </summary>
+        </member>
+        <member name="M:Cforge.NetXtremeDynamicTemplate.#ctor(Cforge.Template)">
+            <summary>
+            Initializes a new instance of the NetXtremeDynamicTemplate class with a template object.
+            </summary>
+        </member>
+        <member name="M:Cforge.NetXtremeDynamicTemplate.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the NetXtremeDynamicTemplate class and load template source from a local file.
+            </summary>
+            <param name="fileName"></param>
+        </member>
+        <member name="M:Cforge.NetXtremeDynamicTemplate.#ctor(System.IO.Stream)">
+            <summary>
+            Initializes a new instance of the NetXtremeDynamicTemplate class and load template source from a Stream.
+            </summary>
+            <param name="fileName"></param>
+        </member>
+        <member name="M:Cforge.NetXtremeDynamicTemplate.WriteError(System.String,System.Object[])">
+            <summary>
+            Writes error to the output writter. This function is used in custom function only.
+            </summary>
+            <param name="message">Message to write to the output.</param>
+            <param name="args">An <see cref="T:System.Object"/> array containing zero or more objects to format.</param>
+        </member>
+        <member name="M:Cforge.NetXtremeDynamicTemplate.LoadFromFile(System.String)">
+            <summary>Load template from a file.</summary>
+            <param name="fileName">The complete file path to be read.</param>
+            <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid, such as being on an unmapped drive.</exception>
+            <exception cref="T:System.ArgumentException">path is an empty string ("").</exception>
+            <exception cref="T:System.ArgumentNullException">path is null.</exception>
+            <exception cref="T:System.IO.IOException">path includes an incorrect or invalid syntax for file name, directory name, or volume label.</exception>
+            <exception cref="T:System.IO.FileNotFoundException">The file cannot be found.</exception>
+            <exception cref="T:Cforge.DynamicTemplateException">Thrown if an error occurred when processing the template source.</exception>
+        </member>
+        <member name="M:Cforge.NetXtremeDynamicTemplate.LoadFromStream(System.IO.Stream)">
+            <summary>Load template from a stream.</summary>
+            <param name="stream">Stream object to read the template content.</param>
+            <exception cref="T:System.ArgumentNullException">Stream is null.</exception>
+        </member>
+        <member name="M:Cforge.NetXtremeDynamicTemplate.LoadFromString(System.String)">
+            <summary>Load template from a file.</summary>
+            <param name="content">The template content.</param>
+            <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid, such as being on an unmapped drive.</exception>
+            <exception cref="T:Cforge.DynamicTemplateException">Thrown if an error occurred when processing the template source.</exception>
+        </member>
+        <member name="M:Cforge.NetXtremeDynamicTemplate.UsingNamespace(System.String)">
+            <summary>Registers a namespace.</summary>
+            <param name="name"></param>
+            <remarks>You do have to specify Assembly name in the 'name' parameter when the namespace you are going to use is the common namespace defined in the .NET Framework.</remarks>
+            <example>
+            	<code lang="CS" title="Using Namespace">
+            using System;
+            using System.Collections.Generic;
+            using System.Text;
+            using Cforge;
+            using System.Windows.Forms;
+             
+            namespace MyNamespace
+            {
+                public static class MyClass
+                {
+                    public static string MyFunction()
+                    {
+                        return "MyFunction";
+                    }
+                }
+            }
+             
+            namespace NetXtremeDynamicTemplateTests.SampleCodes
+            {
+                public static class MyTestClass
+                {
+                    public static string TestString
+                    {
+                        get { return "Static String"; }
+                    }
+             
+                    public static string GetStaticString(string s)
+                    {
+                        return string.Format("GetStaticString returns {0}", s);
+                    }
+             
+                    public static string MyFormat(string message, params object[] parameters)
+                    {
+                        return string.Format(message, parameters);
+                    }
+                }
+             
+                class Namespace
+                {
+                    [STAThread]
+                    static void Main(string[] args)
+                    {
+                        NamespaceFunc();
+                    }
+             
+                    static void NamespaceFunc()
+                    {
+                        // Assume that the Assembly Name is NetXtremeDynamicTemplateTests
+                        // In this string template source: variable c will be a char, s is an array of three characters.
+                        // You can use either syntax in template source or UsingNamespace method in your code.
+                        NetXtremeDynamicTemplate ctl = NetXtremeDynamicLoadTemplateFromString("{%set c='c'/}{%set s={'a','b','c'}/}$string.Format(\"{0} abc {1}\",1,2)$ -- $using(\"NetXtremeDynamicTemplateTests.SampleCodes,NetXtremeDynamicTemplateTests\")$$MyTestClass.TestString$ - $MyTestClass.GetStaticString(\"Test\")$ - $MyTestClass.MyFormat(\"My Format '{0}', '{1}'\", 1, 2)$ - $MyClass.MyFunction()$");
+                        string s = ctl.Run();
+                        ctl.UsingNamespace("MyNamespace, NetXtremeDynamicTemplateTests");
+                        MessageBox.Show(s);
+                    }
+                }
+            }
+                </code>
+            	<code lang="VB" title="Using Namespace">
+            Imports System
+            Imports System.Collections.Generic
+            Imports System.Text
+            Imports Cforge
+            Imports System.Windows.Forms
+             
+            Namespace MyNamespace
+                Public NotInheritable Class [MyClass]
+                    Private Sub New()
+                    End Sub
+                    Public Shared Function MyFunction() As String
+                        Return "MyFunction"
+                    End Function
+                End Class
+            End Namespace
+             
+            Namespace NetXtremeDynamicTemplateTests.SampleCodes
+                Public NotInheritable Class MyTestClass
+                    Private Sub New()
+                    End Sub
+                    Public Shared Readonly Property TestString() As String
+                        Get
+                            Return "Static String"
+                        End Get
+                    End Property
+             
+                    Public Shared Function GetStaticString(ByVal s As String) As String
+                        Return String.Format("GetStaticString returns {0}", s)
+                    End Function
+             
+                    Public Shared Function MyFormat(ByVal message As String, ParamArray parameters As Object()) As String
+                        Return String.Format(message, parameters)
+                    End Function
+                End Class
+             
+                Class [Namespace]
+                    &lt;STAThread()&gt; _
+                    Private Shared Sub Main(ByVal args As String())
+                        NamespaceFunc()
+                    End Sub
+             
+                    Private Shared Sub NamespaceFunc()
+                        ' Assume that the Assembly Name is NetXtremeDynamicTemplateTests
+                        ' In this string template source: variable c will be a char, s is an array of three characters.
+                        ' You can use either syntax in template source or UsingNamespace method in your code.
+                        Dim ctl As NetXtremeDynamicTemplate = NetXtremeDynamicLoadTemplateFromString("{%set c='c'/}{%set s={'a','b','c'}/}$string.Format(""{0} abc {1}"",1,2)$ -- $using(""NetXtremeDynamicTemplateTests.SampleCodes,NetXtremeDynamicTemplateTests"")$$MyTestClass.TestString$ - $MyTestClass.GetStaticString(""Test"")$ - $MyTestClass.MyFormat(""My Format '{0}', '{1}'"", 1, 2)$ - $MyClass.MyFunction()$")
+                        Dim s As String = ctl.Run()
+                        ctl.UsingNamespace("MyNamespace, NetXtremeDynamicTemplateTests")
+                        MessageBox.Show(s)
+                    End Sub
+                End Class
+            End Namespace
+                </code>
+            </example>
+        </member>
+        <member name="M:Cforge.NetXtremeDynamicTemplate.SetFunction(System.String,Cforge.TplRuntimeFunction)">
+            <summary>Add a custom function to the DynamicTemplate by passing an alias name and function address.</summary>
+            <param name="fn">Custom function.</param>
+            <param name="name">Custom function alias name.</param>
+            <example>
+            	<code lang="CS" title="Using SetFunction">
+            using System;
+            using System.Collections.Generic;
+            using System.Text;
+            using Cforge;
+            using System.Windows.Forms;
+             
+            namespace NetXtremeDynamicTemplateTests.SampleCodes
+            {
+                class Function
+                {
+                    [STAThread]
+                    static void Main(string[] args)
+                    {
+                        FunctionSample();
+                    }
+             
+                    static object Power(object[] args)
+                    {
+                        if (args.Length != 2)
+                            return "Invalid parameters";
+             
+                        try
+                        {
+                            double x = Convert.ToDouble(args[0]);
+                            double y = Convert.ToDouble(args[1]);
+             
+                            return Math.Pow(x, y);
+                        }
+                        catch (Exception exc)
+                        {
+                            return "Invalid parameter, error: " + exc.Message;
+                        }            
+                    }
+             
+                    public static void FunctionSample()
+                    {
+                        NetXtremeDynamicTemplate dn = NetXtremeDynamicLoadTemplateFromString("Custom Pow Function demo: $x$ ^ $y$ = $Pow(x,y)$");
+                        dn.SetFunction("Pow", new TplRuntimeFunction(Power));
+                        dn.SetValue("x", 15.0f);
+                        dn.SetValue("y", 2.3f);
+             
+                        MessageBox.Show(dn.Run());
+                    }
+                }
+            }
+                </code>
+            	<code lang="VB" title="Using SetFunction">
+            Imports System
+            Imports System.Collections.Generic
+            Imports System.Text
+            Imports Cforge
+            Imports System.Windows.Forms
+             
+            Namespace NetXtremeDynamicTemplateTests.SampleCodes
+                Class [Function]
+                    &lt;STAThread()&gt; _
+                    Private Shared Sub Main(ByVal args As String())
+                        FunctionSample()
+                    End Sub
+             
+                    Private Shared Function Power(ByVal args As Object()) As Object
+                        If args.Length &lt;&gt; 2 Then
+                            Return "Invalid parameters"
+                        End If
+             
+                        Try
+                            Dim x As Double = Convert.ToDouble(args(0))
+                            Dim y As Double = Convert.ToDouble(args(1))
+             
+                            Return Math.Pow(x, y)
+                        Catch exc As Exception
+                            Return "Invalid parameter, error: " + exc.Message
+                        End Try
+                    End Function
+             
+                    Public Shared Sub FunctionSample()
+                        Dim dn As NetXtremeDynamicTemplate = NetXtremeDynamicLoadTemplateFromString("Custom Pow Function demo: $x$ ^ $y$ = $Pow(x,y)$")
+                        dn.SetFunction("Pow", New TplRuntimeFunction(Power))
+                        dn.SetValue("x", 15F)
+                        dn.SetValue("y", 2.3F)
+             
+                        MessageBox.Show(dn.Run())
+                    End Sub
+                End Class
+            End Namespace
+                </code>
+            </example>
+        </member>
+        <member name="M:Cforge.NetXtremeDynamicTemplate.GetFunction(System.String)">
+            <summary>
+            The GetFunction returns the corresponding function with the given name. 
+            </summary>
+            <param name="name">Function name.</param>
+            <returns>Returns corresponding <see cref="T:Cforge.TplRuntimeFunction"></see> function object.</returns>
+        </member>
+        <member name="M:Cforge.NetXtremeDynamicTemplate.RemoveFunctions">
+            <summary>
+            Clear the function list.
+            </summary>
+        </member>
+        <member name="M:Cforge.NetXtremeDynamicTemplate.SetValue(System.String,System.Object)">
+            <summary>Assigns a value to a corresponding variable alias name.</summary>
+            <param name="name">Variable alias name.</param>
+            <param name="value">Variable's value to assign.</param>
+            <example>
+            	<code lang="CS" title="Using SetValue">
+            using System;
+            using System.Collections.Generic;
+            using System.Text;
+            using Cforge;
+            using System.Windows.Forms;
+             
+            namespace NetXtremeDynamicTemplateTests.SampleCodes
+            {
+                class Value
+                {
+                    [STAThread]
+                    static void Main(string[] args)
+                    {
+                        NetXtremeDynamicTemplate dn = NetXtremeDynamicLoadTemplateFromString("This is my calculated value: $string.Format(a * a + b * b, \"#.##\")$");
+                        dn.SetValue("a", 15.0f);
+                        dn.SetValue("b", 2.3f);
+             
+                        MessageBox.Show(dn.Run());
+                    }
+                }
+            }
+                </code>
+            	<code lang="VB" title="Using SetValue">
+            Imports System
+            Imports System.Collections.Generic
+            Imports System.Text
+            Imports Cforge
+            Imports System.Windows.Forms
+             
+            Namespace NetXtremeDynamicTemplateTests.SampleCodes
+                Class Value
+                    &lt;STAThread()&gt; _
+                    Private Shared Sub Main(ByVal args As String())
+                        Dim dn As NetXtremeDynamicTemplate = NetXtremeDynamicLoadTemplateFromString("This is my calculated value: $string.Format(a * a + b * b, ""#.##"")$")
+                        dn.SetValue("a", 15F)
+                        dn.SetValue("b", 2.3F)
+             
+                        MessageBox.Show(dn.Run())
+                    End Sub
+                End Class
+            End Namespace
+                </code>
+            </example>
+        </member>
+        <member name="M:Cforge.NetXtremeDynamicTemplate.GetValue(System.String)">
+            <summary>
+            The GetValue returns the corresponding object with the given variable name. 
+            </summary>
+            <param name="name">Variable alias name/</param>
+            <returns>Returns corresponding value.</returns>
+        </member>
+        <member name="M:Cforge.NetXtremeDynamicTemplate.GetVariableType(System.String)">
+            <summary>
+            Returns the corresponding value's type with the given variable name.
+            </summary>
+            <param name="name">Variable alias name/</param>
+            <returns>The variable value type.</returns>
+        </member>
+        <member name="M:Cforge.NetXtremeDynamicTemplate.RemoveValues">
+            <summary>
+            Remove all defined values.
+            </summary>
+        </member>
+        <member name="M:Cforge.NetXtremeDynamicTemplate.FindTemplate(System.String)">
+            <summary>
+            Searches for a template object having the name that matches with the specified one.
+            </summary>
+            <param name="name">Tempalate name to search for.</param>
+            <returns>A reference to the found template object, null if the specified name cannot be found.</returns>
+        </member>
+        <member name="M:Cforge.NetXtremeDynamicTemplate.Run(System.IO.TextWriter)">
+            <summary>Process the current template and sends output to a writer.</summary>
+            <param name="writer">A writer will be used as an output writer for the template processing.</param>
+            <exception cref="T:Cforge.DynamicTemplateException">Thrown if an error occurred when processing the template source.</exception>
+        </member>
+        <member name="M:Cforge.NetXtremeDynamicTemplate.Run(Cforge.Template)">
+            <summary>
+            Processes and runs a provided Template object and returns the generated output string.
+            </summary>
+            <param name="tpl">A reference to the Template object to process.</param>
+            <returns>Generated output string.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown when the parameter "tpl" is null.</exception>
+        </member>
+        <member name="M:Cforge.NetXtremeDynamicTemplate.Run(System.String)">
+            <summary>Find the correspoding template with the given name, process found template and returns the generated output string.</summary>
+            <param name="name">Name of the template.</param>
+            <returns>Generated output string.</returns>
+            <exception cref="T:Cforge.DynamicTemplateException">Thrown if an error occurred when processing the template source.</exception>
+        </member>
+        <member name="M:Cforge.NetXtremeDynamicTemplate.Run(System.IO.TextWriter,System.String)">
+            <summary>Find the correspoding template with the given name, process found template and sends output to a writer.</summary>
+            <exception cref="T:Cforge.DynamicTemplateException">Thrown if an error occurred when processing the template source.</exception>
+        </member>
+        <member name="M:Cforge.NetXtremeDynamicTemplate.Run">
+            <summary>Process the current template and return the output as a string.</summary>
+            <example>
+            	<code lang="CS" title="Using SetValue">
+            using System;
+            using System.Collections.Generic;
+            using System.Text;
+            using Cforge;
+            using System.Windows.Forms;
+             
+            namespace NetXtremeDynamicTemplateTests.SampleCodes
+            {
+                class Value
+                {
+                    [STAThread]
+                    static void Main(string[] args)
+                    {
+                        NetXtremeDynamicTemplate dn = NetXtremeDynamicLoadTemplateFromString("This is my calculated value: $string.Format(a * a + b * b, \"#.##\")$");
+                        dn.SetValue("a", 15.0f);
+                        dn.SetValue("b", 2.3f);
+             
+                        MessageBox.Show(dn.Run());
+                    }
+                }
+            }
+                </code>
+            	<code lang="VB" title="Using SetValue">
+            Imports System
+            Imports System.Collections.Generic
+            Imports System.Text
+            Imports Cforge
+            Imports System.Windows.Forms
+             
+            Namespace NetXtremeDynamicTemplateTests.SampleCodes
+                Class Value
+                    &lt;STAThread()&gt; _
+                    Private Shared Sub Main(ByVal args As String())
+                        Dim dn As NetXtremeDynamicTemplate = NetXtremeDynamicLoadTemplateFromString("This is my calculated value: $string.Format(a * a + b * b, ""#.##"")$")
+                        dn.SetValue("a", 15F)
+                        dn.SetValue("b", 2.3F)
+             
+                        MessageBox.Show(dn.Run())
+                    End Sub
+                End Class
+            End Namespace
+                </code>
+            </example>
+            <returns>Generated output string.</returns>
+            <exception cref="T:Cforge.DynamicTemplateException">Thrown if an error occurred when processing the template source.</exception>
+        </member>
+        <member name="M:Cforge.NetXtremeDynamicTemplate.VerifyParameters(Cforge.NetXtremeDynamicTemplate,System.String,System.Object[],System.Int32)">
+            <summary>
+            Verifies a function having specified parameters count.
+            </summary>
+            <param name="dt">NetXtremeDynamicTemplate object.</param>
+            <param name="name">Function's name.</param>
+            <param name="args">Function's arguments.</param>
+            <param name="count">The number of parameters that the function requires.</param>
+            <returns>True if the number of arguments equals to the specified number, otherwise is false.</returns>
+        </member>
+        <member name="M:Cforge.NetXtremeDynamicTemplate.VerifyParameters(Cforge.NetXtremeDynamicTemplate,System.String,System.Object[],System.Int32,System.Type[])">
+            <summary>
+            Verifies a function having specified parameters count and matching specified types.
+            </summary>
+            <param name="dt">NetXtremeDynamicTemplate object.</param>
+            <param name="name">Function's name.</param>
+            <param name="args">Function's arguments.</param>
+            <param name="count">The number of parameters that the function requires.</param>
+            <param name="types">Argument types.</param>
+            <returns>True if the number of arguments equals to the specified number and parameters' types are specified types, otherwise is false.</returns>
+        </member>
+        <member name="M:Cforge.NetXtremeDynamicTemplate.VerifyParameters(Cforge.NetXtremeDynamicTemplate,System.String,System.Object[],System.Int32,System.Int32)">
+            <summary>
+            Verifies a function having specified parameters count range.
+            </summary>
+            <param name="dt">NetXtremeDynamicTemplate object.</param>
+            <param name="name">Function's name.</param>
+            <param name="args">Function's arguments.</param>
+            <param name="countFrom">The number of parameters that the function requires from.</param>
+            <param name="countTo">The number of parameters that the function requires to.</param>
+            <returns>True if the number of arguments equals to the specified number and parameters' types are specified types, otherwise is false.</returns>
+        </member>
+        <member name="M:Cforge.NetXtremeDynamicTemplate.VerifyParameters(Cforge.NetXtremeDynamicTemplate,System.String,System.Object[],System.Int32,System.Int32,System.Type[])">
+            <summary>
+            Verifies a function having specified parameters count range and matching specified types.
+            </summary>
+            <param name="dt">NetXtremeDynamicTemplate object.</param>
+            <param name="name">Function's name.</param>
+            <param name="args">Function's arguments.</param>
+            <param name="countFrom">The number of parameters that the function requires from.</param>
+            <param name="countTo">The number of parameters that the function requires to.</param>
+            <param name="types">Argument types.</param>
+            <returns>True if the number of arguments equals to the specified number and parameters' types are specified types, otherwise is false.</returns>
+        </member>
+        <member name="M:Cforge.NetXtremeDynamicTemplate.LoadTemplateClassesFromFile(System.String)">
+            <summary>
+            Loads templateclasses from a file.
+            </summary>
+            <param name="path">class file name.</param>
+            <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid, such as being on an unmapped drive.</exception>
+            <exception cref="T:System.ArgumentException">path is an empty string ("").</exception>
+            <exception cref="T:System.IO.IOException">path includes an incorrect or invalid syntax for file name, directory name, or volume label.</exception>
+            <exception cref="T:System.ArgumentNullException">path is null.</exception>
+            <exception cref="T:System.IO.FileNotFoundException">The file cannot be found.</exception>
+            <exception cref="T:Cforge.DynamicTemplateException">There was an error while processing the templateclass file.</exception>
+        </member>
+        <member name="M:Cforge.NetXtremeDynamicTemplate.LoadTemplateClassesFromStream(System.IO.Stream)">
+            <summary>
+            Loads templateclasses from a stream.
+            </summary>
+            <param name="s">Stream object.</param>
+            <exception cref="T:Cforge.DynamicTemplateException">There was an error while processing the templateclass file.</exception>
+        </member>
+        <member name="M:Cforge.NetXtremeDynamicTemplate.LoadTemplateClassesFromString(System.String)">
+            <summary>
+            Loads templateclasses from a string.
+            </summary>
+            <param name="data">Content data.</param>
+            <exception cref="T:Cforge.DynamicTemplateException">There was an error while processing the templateclass file.</exception>
+        </member>
+        <member name="E:Cforge.NetXtremeDynamicTemplate.OnLoadTemplateFromCache">
+            <summary>
+            Occurs before a template file is loaded. It's used to load a template from cache.
+            </summary>
+        </member>
+        <member name="E:Cforge.NetXtremeDynamicTemplate.OnSaveTemplateToCache">
+            <summary>
+            Occurs after a template file is loaded and is ready to save to the cache.
+            </summary>
+        </member>
+        <member name="P:Cforge.NetXtremeDynamicTemplate.Settings">
+            <summary>
+            Represents NetXtremeDynamicTemplate content parser's settings.
+            </summary>
+        </member>
+        <member name="P:Cforge.NetXtremeDynamicTemplate.RestrictedMethodList">
+            <summary>Gets or sets a collection of wildcard strings that represents restricted methods.</summary>
+            <example>
+            	<code lang="CS" title="Restriction">
+            using System;
+            using System.Collections.Generic;
+            using System.Windows.Forms;
+            using Cforge;
+             
+            namespace MethodAndPropertyRestriction
+            {
+                public static class MyTestClass
+                {
+                    public static string TestString
+                    {
+                        get { return "Static String"; }
+                    }
+             
+                    public static string GetStaticString(string s)
+                    {
+                        return string.Format("GetStaticString returns {0}", s);
+                    }
+                }
+             
+                public static class ClassRestricted
+                {
+                    public static string TestString
+                    {
+                        get { return "Test String in a restricted class"; }
+                    }
+                }
+             
+                public static class MethodAndProperty
+                {
+                    public static string TestStringRestricted
+                    {
+                        get { return "Restricted String"; }
+                    }
+             
+                    public static string GetStaticStringRestricted(string s)
+                    {
+                        return string.Format("GetStaticStringRestricted returns {0}", s);
+                    }
+                }
+             
+                static class Program
+                {
+                    /// &lt;summary&gt;
+                    /// The main entry point for the application.
+                    /// &lt;/summary&gt;
+                    [STAThread]
+                    static void Main()
+                    {
+                        try
+                        {
+                            // Assume that the Assembly Name is MethodAndPropertyRestriction
+                            NetXtremeDynamicTemplate ctl = NetXtremeDynamicLoadTemplateFromString("$using(\"MethodAndPropertyRestriction,MethodAndPropertyRestriction\")$$MyTestClass.TestString$ - $MyTestClass.GetStaticString(\"Test\")$ --- $ClassRestricted.TestString$ - $MethodAndProperty.TestStringRestricted$");
+                            ctl.RestrictedMethodList.Add("*.ClassRestricted.*");
+                            ctl.RestrictedPropertyList.Add("*.ClassRestricted.*");
+                            ctl.RestrictedMethodList.Add("*.MethodAndProperty.GetStaticStringRestricted");
+                            ctl.RestrictedPropertyList.Add(".TestStringRestricted.*");
+                            string s = ctl.Run();
+                            MessageBox.Show(s);
+                        }
+                        catch (Cforge.DynamicTemplateException exc)
+                        {
+                            MessageBox.Show(exc.Message);
+                        }
+                    }
+                }
+            }
+                </code>
+            	<code lang="VB" title="Restriction">
+            Imports System
+            Imports System.Collections.Generic
+            Imports System.Windows.Forms
+            Imports Cforge
+             
+            Namespace MethodAndPropertyRestriction
+                Public NotInheritable Class MyTestClass
+                    Private Sub New()
+                    End Sub
+                    Public Shared Readonly Property TestString() As String
+                        Get
+                            Return "Static String"
+                        End Get
+                    End Property
+             
+                    Public Shared Function GetStaticString(ByVal s As String) As String
+                        Return String.Format("GetStaticString returns {0}", s)
+                    End Function
+                End Class
+             
+                Public NotInheritable Class ClassRestricted
+                    Private Sub New()
+                    End Sub
+                    Public Shared Readonly Property TestString() As String
+                        Get
+                            Return "Test String in a restricted class"
+                        End Get
+                    End Property
+                End Class
+             
+                Public NotInheritable Class MethodAndProperty
+                    Private Sub New()
+                    End Sub
+                    Public Shared Readonly Property TestStringRestricted() As String
+                        Get
+                            Return "Restricted String"
+                        End Get
+                    End Property
+             
+                    Public Shared Function GetStaticStringRestricted(ByVal s As String) As String
+                        Return String.Format("GetStaticStringRestricted returns {0}", s)
+                    End Function
+                End Class
+             
+                NotInheritable Class Program
+                    Private Sub New()
+                    End Sub
+                    ''' &lt;summary&gt;
+                    ''' The main entry point for the application.
+                    ''' &lt;/summary&gt;
+                    &lt;STAThread()&gt; _
+                    Private Shared Sub Main()
+                        Try
+                            ' Assume that the Assembly Name is MethodAndPropertyRestriction
+                            Dim ctl As NetXtremeDynamicTemplate = NetXtremeDynamicLoadTemplateFromString("$using(""MethodAndPropertyRestriction,MethodAndPropertyRestriction"")$$MyTestClass.TestString$ - $MyTestClass.GetStaticString(""Test"")$ --- $ClassRestricted.TestString$ - $MethodAndProperty.TestStringRestricted$")
+                            ctl.RestrictedMethodList.Add("*.ClassRestricted.*")
+                            ctl.RestrictedPropertyList.Add("*.ClassRestricted.*")
+                            ctl.RestrictedMethodList.Add("*.MethodAndProperty.GetStaticStringRestricted")
+                            ctl.RestrictedPropertyList.Add(".TestStringRestricted.*")
+                            Dim s As String = ctl.Run()
+                            MessageBox.Show(s)
+                        Catch exc As Cforge.DynamicTemplateException
+                            MessageBox.Show(exc.Message)
+                        End Try
+                    End Sub
+                End Class
+            End Namespace
+                </code>
+            </example>
+        </member>
+        <member name="P:Cforge.NetXtremeDynamicTemplate.AllowedMethodList">
+            <summary>
+            Gets a collection of wildcard strings that represents allowed methods.
+            </summary>
+        </member>
+        <member name="P:Cforge.NetXtremeDynamicTemplate.RestrictedPropertyList">
+            <summary>
+            Gets a collection of wildcard strings that represents restricted properties.
+            </summary>
+        </member>
+        <member name="P:Cforge.NetXtremeDynamicTemplate.AllowedPropertyList">
+            <summary>
+            Gets a collection of wildcard strings that represents allowed properties.
+            </summary>
+        </member>
+        <member name="P:Cforge.NetXtremeDynamicTemplate.RootTemplatePath">
+            <summary>
+            Gets or sets the root path for templates loading from files.
+            </summary>
+        </member>
+        <member name="P:Cforge.NetXtremeDynamicTemplate.MainTemplate">
+            <summary>
+            Gets the main (root) template.
+            </summary>
+        </member>
+        <member name="P:Cforge.NetXtremeDynamicTemplate.CurrentTemplate">
+            <summary>
+            Gets the current template for rendering.
+            </summary>
+        </member>
+        <member name="P:Cforge.NetXtremeDynamicTemplate.CurrentWriter">
+            <summary>
+            Gets the current TextWritter object. It's used in custom function only.
+            </summary>
+        </member>
+        <member name="P:Cforge.NetXtremeDynamicTemplate.TemplateClasses">
+            <summary>
+            Gets a dictionary of templateclasses having templateclass name as key and templateclass object reference as value.
+            </summary>
+        </member>
+        <member name="T:Cforge.Template">
+            <summary>
+            Represents a template.
+            </summary>
+        </member>
+        <member name="M:Cforge.Template.#ctor">
+            <summary>
+            Initializes a new instance of the Template class.
+            </summary>
+        </member>
+        <member name="M:Cforge.Template.IsParameterRequired(System.String)">
+            <summary>
+            Checks to see whether the provided parameter name is required or not.
+            </summary>
+            <param name="name">Parameter name.</param>
+            <returns>True if the parameter is required, otherwise is False.</returns>
+        </member>
+        <member name="P:Cforge.Template.Name">
+            <summary>
+            Gets template's name.
+            </summary>
+        </member>
+        <member name="P:Cforge.Template.ParentTemplate">
+            <summary>
+            Gets the template's parent.
+            </summary>
+        </member>
+        <member name="P:Cforge.Template.TemplateSourceDir">
+            <summary>
+            Gets or sets the template source directory.
+            </summary>
+        </member>
+        <member name="P:Cforge.Template.RequiredParameters">
+            <summary>
+            Gets a list of required parameters.
+            </summary>
+        </member>
+        <member name="P:Cforge.Template.Templates">
+            <summary>
+            Gets the Inner Templates.
+            </summary>
+        </member>
+        <member name="P:Cforge.Template.Abstract">
+            <summary>
+            Indicates whether the template class is abstract or not.
+            </summary>
+        </member>
+        <member name="T:Cforge.TemplateClass">
+            <summary>
+            Template class.
+            </summary>
+        </member>
+        <member name="M:Cforge.TemplateClass.#ctor">
+            <summary>
+            Initializes a new instance of the TemplateClass class.
+            </summary>
+        </member>
+        <member name="P:Cforge.TemplateClass.AbstractTemplates">
+            <summary>
+            Gets list of abstract templates.
+            </summary>
+        </member>
+        <member name="P:Cforge.TemplateClass.Templates">
+            <summary>
+            Gets list of regular templates.
+            </summary>
+        </member>
+        <member name="P:Cforge.TemplateClass.BaseClasses">
+            <summary>
+            Gets list of base templateclasses.
+            </summary>
+        </member>
+        <member name="T:Cforge.TemplateEntities.ElementType">
+            <summary>
+            Summary description for ElementTypes.
+            </summary>
+        </member>
+        <member name="P:Cforge.TemplateEntities.ObjectPropertyField.Arguments">
+            <summary>
+            Gets or sets argument list for the function
+            </summary>
+        </member>
+        <member name="T:Cforge.TemplateEntities.ObjectPropertyPrimOperator">
+            <summary>
+            Summary description for Property.
+            </summary>
+        </member>
+        <member name="P:Cforge.TemplateEntities.ObjectPropertyPrimOperator.Fields">
+            <summary>
+            Gets or sets a list of Fields
+            </summary>
+        </member>
+        <member name="P:Cforge.TemplateEntities.ObjectPropertyPrimOperator.Exp">
+            <summary>
+            Gets or sets the left hand side expression
+            </summary>
+        </member>
+        <member name="T:Cforge.TemplateParser.ContentProcessor">
+            <summary>
+            Summary description for ContentProcessor.
+            </summary>
+        </member>
+        <member name="T:Cforge.TemplateParser.ObjectUtil">
+            <summary>
+            Summary description for Utility.
+            </summary>
+        </member>
+        <member name="T:Cforge.TemplateParser.TemplateProcessor">
+            <summary>
+            Summary description for TemplateProcessor.
+            </summary>
+        </member>
+        <member name="T:Cforge.Web.UI.WebControls.XtremeCaptcha">
+            <summary>
+            CAPTCHA control to detect bots and prevent automated page posting.
+            </summary>
+        </member>
+        <member name="M:Cforge.Web.UI.WebControls.XtremeCaptcha.Validate(System.String)">
+            <summary>
+            Checks the user inputted code to see whether it matches the captcha code.
+            </summary>
+            <param name="userCode">The user inputted code.</param>
+            <returns>true if the user inputted code matches the captcha code; otherwise is false.</returns>
+        </member>
+        <member name="M:Cforge.Web.UI.WebControls.XtremeCaptcha.GenerateImage">
+            <summary>
+            Returns a new CAPTCHA image in a stream object showing the captcha code.
+            </summary>
+            <returns>The image stream object.</returns>
+        </member>
+        <member name="M:Cforge.Web.UI.WebControls.XtremeCaptcha.OnPreRender(System.EventArgs)">
+            <exclude/>
+            <excludetoc/>
+        </member>
+        <member name="M:Cforge.Web.UI.WebControls.XtremeCaptcha.Render(System.Web.UI.HtmlTextWriter)">
+            <exclude/>
+            <excludetoc/>
+        </member>
+        <member name="M:Cforge.Web.UI.WebControls.XtremeCaptcha.#ctor">
+            <summary>
+            Initializes a new instance of the XtremeCaptcha class.
+            </summary>
+        </member>
+        <member name="M:Cforge.Web.UI.WebControls.XtremeCaptcha.Refresh">
+            <summary>
+            Generates new captcha code.
+            </summary>
+        </member>
+        <member name="E:Cforge.Web.UI.WebControls.XtremeCaptcha.BeforeDrawingCaptchaImage">
+            <summary>
+            Occurrs when the captcha image is being drawn.
+            </summary>
+        </member>
+        <member name="E:Cforge.Web.UI.WebControls.XtremeCaptcha.AfterDrawingCaptchaImage">
+            <summary>
+            Occurrs after the captcha image is drawn.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.XtremeCaptcha.Template">
+            <summary>
+            This property is used for templating. In the template, you can use the following variable: 
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.XtremeCaptcha.EnableSound">
+            <summary>
+            Gets or sets the boolean flag indicating whether <see cref="T:Cforge.Web.UI.WebControls.XtremeCaptcha"/> will show the Sound button.
+            </summary>
+            <value>
+            Default: <b>True</b>
+            </value>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.XtremeCaptcha.EnableRefresh">
+            <summary>
+            Gets or sets the boolean flag indicating whether <see cref="T:Cforge.Web.UI.WebControls.XtremeCaptcha"/> will show the Refresh button.
+            </summary>
+            <value>
+            Default: <b>True</b>
+            </value>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.XtremeCaptcha.BorderColor">
+            <exclude/>
+            <excludetoc/>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.XtremeCaptcha.BorderStyle">
+            <exclude/>
+            <excludetoc/>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.XtremeCaptcha.AccessKey">
+            <exclude/>
+            <excludetoc/>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.XtremeCaptcha.BorderWidth">
+            <exclude/>
+            <excludetoc/>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.XtremeCaptcha.Font">
+            <exclude/>
+            <excludetoc/>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.XtremeCaptcha.BackColor">
+            <exclude/>
+            <excludetoc/>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.XtremeCaptcha.ForeColor">
+            <exclude/>
+            <excludetoc/>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.XtremeCaptcha.CssClass">
+            <exclude/>
+            <excludetoc/>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.XtremeCaptcha.EnableTheming">
+            <exclude/>
+            <excludetoc/>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.XtremeCaptcha.SkinID">
+            <exclude/>
+            <excludetoc/>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.XtremeCaptcha.ToolTip">
+            <exclude/>
+            <excludetoc/>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.XtremeCaptcha.Width">
+            <exclude/>
+            <excludetoc/>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.XtremeCaptcha.Height">
+            <exclude/>
+            <excludetoc/>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.XtremeCaptcha.XtremeControlsDir">
+            <exclude/>
+            <excludetoc/>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.XtremeCaptcha.SoundImageUrl">
+            <summary>
+            Gets or sets the sound image url.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.XtremeCaptcha.SoundToolTip">
+            <summary>
+            Gets or sets the sound image ToolTip.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.XtremeCaptcha.RefreshImageUrl">
+            <summary>
+            Gets or sets the refresh image url.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.XtremeCaptcha.RefreshToolTip">
+            <summary>
+            Gets or sets the refresh image ToolTip.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.XtremeCaptcha.CaptchaImageToolTip">
+            <summary>
+            Gets or sets the captcha image ToolTip.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.XtremeCaptcha.CaptchaImageWidth">
+            <summary>
+            Gets or sets the captcha image width.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.XtremeCaptcha.CaptchaImageHeight">
+            <summary>
+            Gets or sets the captcha image height.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.XtremeCaptcha.CaptchaImageClientID">
+            <summary>
+            Gets the captcha image client ID.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.XtremeCaptcha.CaptchaCode">
+            <summary>
+            Gets the captcha code.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.XtremeCaptcha.CaptchaCodeLength">
+            <summary>
+            Gets or sets the captcha code length.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.XtremeCaptcha.CaptchaCodeType">
+            <summary>
+            Gets or sets the captcha code type.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.XtremeCaptcha.CaptchaImageFormat">
+            <summary>
+            Gets or sets the captcha image format.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.XtremeCaptcha.CaptchaStyle">
+            <summary>
+            Gets or sets the captcha text style.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.XtremeCaptcha.CaptchaTimeout">
+            <summary>
+            Gets or sets the captcha timeout in ms.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.XtremeCaptcha.EnableEmbeddedHttpHandler">
+            <summary>
+            Gets or sets the boolean flag indicating whether to enable the embedded http handler for rendering CAPTCHA images and generating sound data. Default value is true.
+            </summary>
+            <remarks>
+            <para>Set it to false if your web application is deployed in Medium Trust Environment (shared web hosting). If it is set to false you will need to add one more line to the httpHandlers section in the web.config file:</para>
+            <para>&lt;add verb="*" path="xcaptcha.ashx" type="Cforge.Web.UI.WebControls.CaptchaHttpHandler, AspXtremeCaptcha" /&gt;</para>
+            <para>eg:</para>
+            <para>&lt;system.web&gt;</para>
+            <para>    ...</para>
+            <para>    &lt;httpHandlers&gt;</para>
+            <para>		...</para>
+            <para>		&lt;add verb="*" path="xcaptcha.ashx" type="Cforge.Web.UI.WebControls.CaptchaHttpHandler, AspXtremeCaptcha" /&gt;</para>
+            <para>		...</para>
+            <para>	&lt;/httpHandlers&gt;</para>
+            <para>	...</para>
+            <para>&lt;/system.web&gt;</para>
+            </remarks>
+        </member>
+        <member name="T:Cforge.Web.UI.WebControls.DrawingCaptchaImageEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Cforge.Web.UI.WebControls.XtremeCaptcha.BeforeDrawingCaptchaImage"/> and <see cref="E:Cforge.Web.UI.WebControls.XtremeCaptcha.AfterDrawingCaptchaImage"/> events.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.DrawingCaptchaImageEventArgs.CaptchaCode">
+            <summary>
+            Gets the captcha code.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.DrawingCaptchaImageEventArgs.CaptchaImageStream">
+            <summary>
+            Gets the captcha image stream object.
+            </summary>
+        </member>
+        <member name="P:Cforge.Web.UI.WebControls.DrawingCaptchaImageEventArgs.Context">
+            <summary>
+            Gets the current HttpContext object.
+            </summary>
+        </member>
+        <member name="T:Cforge.Web.UI.WebControls.CaptchaCodeType">
+            <summary>
+            Specifies the captcha code type.
+            </summary>
+        </member>
+        <member name="F:Cforge.Web.UI.WebControls.CaptchaCodeType.AlphaAndNumeric">
+            <summary>
+            'a'-'z' and '0'-'9' character sets.
+            </summary> 
+        </member>
+        <member name="F:Cforge.Web.UI.WebControls.CaptchaCodeType.Alpha">
+            <summary>
+            'a'-'z' character set only.
+            </summary>
+        </member>
+        <member name="F:Cforge.Web.UI.WebControls.CaptchaCodeType.Numeric">
+            <summary>
+            '0'-'9' character set only.
+            </summary>
+        </member>
+    </members>
+</doc>
